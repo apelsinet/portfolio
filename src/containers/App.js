@@ -3,33 +3,33 @@
 import React, {PropTypes} from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import FuelSavingsApp from '../components/FuelSavingsApp';
-import * as FuelSavingsActions from '../actions/fuelSavingsActions';
+import Wrapper from '../components/Wrapper';
+import * as PortfolioActions from '../actions/portfolioActions';
 
 class App extends React.Component {
   render() {
-    const { fuelSavingsAppState, actions } = this.props;
+    const { portfolioAppState, actions } = this.props;
 
     return (
-        <FuelSavingsApp fuelSavingsAppState={fuelSavingsAppState} actions={actions} />
+      <Wrapper />
     );
   }
 }
 
 App.propTypes = {
   actions: PropTypes.object.isRequired,
-  fuelSavingsAppState: PropTypes.object.isRequired
+  portfolioAppState: PropTypes.object.isRequired
 };
 
 function mapStateToProps(state) {
   return {
-    fuelSavingsAppState: state.fuelSavingsAppState
+    portfolioAppState: state.portfolioAppState
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    actions: bindActionCreators(FuelSavingsActions, dispatch)
+    actions: bindActionCreators(PortfolioActions, dispatch)
   };
 }
 
