@@ -1,0 +1,77 @@
+.main{
+  // Typography
+  h1, h2, h3, h4 {
+    font-family: $font-family-heading;
+    margin: 0;
+  }
+  h1 {
+    font-size: $font-size-4x;
+  }
+  h2 {
+    font-size: $font-size-3x;
+  }
+  h3 {
+    font-size: $font-size-2x;
+    text-transform: uppercase;
+  }
+  h4 {
+    font-size: $font-size-base;
+    text-transform: uppercase;
+  }
+
+  p, li {
+    color: #333;
+    font-size: $font-size-2x;
+    line-height: 1.3em;
+    margin: 0 0 $font-size-base 0;
+  }
+
+  ul {
+    list-style-type: circle;
+  }
+
+  blockquote {
+    margin: 0 2em 1em 2em;
+    p {
+      font-style: italic;
+      color: #444;
+      margin-bottom: 0.5em;
+    }
+    cite {
+      font-weight: 700;
+      font-style: normal;
+    }
+  }
+
+  a, a:visited {
+    color: $red;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  a:active {
+    background: $red;
+    color: white;
+  }
+
+  p, li, blockquote {
+    font-family: $font-family-base;
+  }
+  code {
+    font-family: $font-family-code;
+
+  }
+
+  h1, h2, h3, h4, p, li, cite, a, a:visited, code, span {
+    &::selection {
+      background: $red;
+      color: white;
+    }
+  }
+
+  section {
+    margin: 0 $font-size-2x 0 $font-size-2x;
+    max-width: 40em; // As close to 66 characters per line as possible.
+  }
+}

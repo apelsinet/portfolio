@@ -1,0 +1,48 @@
+/*
+ * Colors
+ * ========================================================================== */
+
+
+// http://www.colourlovers.com/palette/694737/Thought_Provoking
+$yellow:                #ECD078;
+$orange:                #D95B43;
+$red:                   #C02942;
+$purple:                #542437;
+$blue:                  #53777A;
+
+/*
+ * Typography
+ * ========================================================================== */
+
+$font-family-base:      'Neuton', serif;
+$font-family-heading:   'Montserrat', sans-serif;
+$font-family-code:      'Roboto Mono', monospace;
+
+$font-size-tiny:        0.382em;
+$font-size-small:       0.618em;
+$font-size-base:        1em;
+$font-size-2x:          1.618em;
+$font-size-3x:          2.618em;
+$font-size-4x:          4.236em;
+
+
+/*
+ * Layout
+ * ========================================================================== */
+
+$max-content-width:     1000px;
+
+/*
+ * Media queries breakpoints
+ * ========================================================================== */
+
+$screen-xs-min:         480px;  /* Extra small screen / phone */
+$screen-sm-min:         768px;  /* Small screen / tablet */
+$screen-md-min:         992px;  /* Medium screen / desktop */
+$screen-lg-min:         1200px; /* Large screen / wide desktop */
+
+/*
+ * Animations
+ * ========================================================================== */
+
+$animation-swift-out:   .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;

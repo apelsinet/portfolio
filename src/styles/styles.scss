@@ -1,19 +1,20 @@
-/* Variables */
+@import 'reset';
+@import 'mixins';
+@import 'variables';
+
+@import 'header';
+@import 'main';
+@import 'footer';
 
 
-/* Styles */
-body {
-  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 1.4em;
-  color: #4d4d4d;
-  font-weight: 300;
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
+// Base
+html {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .wrapper {
-  background: black;
+  margin: 0 auto;
+  max-width: $screen-sm-min;
 }
+
