@@ -1,4 +1,4 @@
-.main{
+.main {
   // Typography
   h1, h2, h3, h4 {
     font-family: $font-family-heading;
@@ -6,13 +6,19 @@
   }
   h1 {
     font-size: $font-size-4x;
+    position: relative;
+    left: -0.08em; // align heading with paragraph
   }
   h2 {
     font-size: $font-size-3x;
+    position: relative;
+    left: -0.07em;
   }
   h3 {
     font-size: $font-size-2x;
     text-transform: uppercase;
+    position: relative;
+    left: -0.05em;
   }
   h4 {
     font-size: $font-size-base;
@@ -27,19 +33,26 @@
   }
 
   ul {
-    list-style-type: circle;
+    list-style: none;
+  }
+  ul li:before {
+    content: '»';
+    margin: 0 0.4em 0 -0.77em;
+    position: relative;
+    top: -0.05em;
   }
 
   blockquote {
     margin: 0 2em 1em 2em;
     p {
       font-style: italic;
-      color: #444;
+      color: #222;
       margin-bottom: 0.5em;
     }
     cite {
       font-weight: 700;
       font-style: normal;
+      color: #444;
     }
   }
 
