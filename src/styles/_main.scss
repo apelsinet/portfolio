@@ -27,7 +27,7 @@
 
   p, li {
     color: #333;
-    font-size: $font-size-2x;
+    font-size: $font-size-base;
     line-height: 1.3em;
     margin: 0 0 $font-size-base 0;
   }
@@ -73,6 +73,7 @@
   }
   code {
     font-family: $font-family-code;
+    font-size: $font-size-small;
 
   }
 
