@@ -10,14 +10,23 @@
 // Base
 html {
   font-size: 16px;
+  @media (min-width: $screen-sm-min) {
+    font-size: 24px;
+  }
+  @media (min-width: $screen-lg-min) {
+    font-size: 36px;
+  }
   font-weight: 400;
 }
 
 .wrapper {
   margin: 0 auto;
   max-width: $screen-xs-min;
-  @media (min-device-width: $screen-sm-min) {
+  @media (min-width: $screen-sm-min) {
     max-width: $screen-sm-min;
+  }
+  @media (min-width: $screen-lg-min) {
+    max-width: $screen-lg-min;
   }
 }
 

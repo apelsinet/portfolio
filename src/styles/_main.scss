@@ -28,9 +28,6 @@
   p, li {
     color: #333;
     font-size: $font-size-base;
-    @media (min-device-width: $screen-sm-min) {
-      font-size: $font-size-2x;
-    }
     line-height: 1.3em;
     margin: 0 0 $font-size-base 0;
   }
@@ -77,10 +74,6 @@
   code {
     font-family: $font-family-code;
     font-size: $font-size-small;
-    @media (min-device-width: $screen-sm-min) {
-      font-size: $font-size-base;
-    }
-
   }
 
   h1, h2, h3, h4, p, li, cite, a, a:visited, code, span {
@@ -92,9 +85,7 @@
 
   section {
     padding: 0 $font-size-2x 0 $font-size-2x;
-    @media (min-device-width: $screen-sm-min) {
-      margin: 0 auto;
-    }
-    max-width: 40em; // As close to 66 characters per line as possible.
+    margin: 0 auto;
+    max-width: 30em; // As close to 66 characters per line as possible.
   }
 }
