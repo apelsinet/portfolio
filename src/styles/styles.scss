@@ -16,5 +16,8 @@ html {
 .wrapper {
   margin: 0 auto;
   max-width: $screen-xs-min;
+  @media (min-device-width: $screen-sm-min) {
+    max-width: $screen-sm-min;
+  }
 }
 
