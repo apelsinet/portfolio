@@ -1,5 +1,15 @@
-.main {
-  // Typography
+main {
+  /* Responsive page-width */
+  margin: 0 auto;
+  max-width: $screen-xs-min;
+  @media (min-width: $screen-sm-min) {
+    max-width: $screen-sm-min;
+  }
+  @media (min-width: $screen-lg-min) {
+    max-width: $screen-lg-min;
+  }
+
+  /* Typography */
   h1, h2, h3, h4 {
     font-family: $font-family-heading;
     margin: 0;
@@ -88,4 +98,5 @@
     margin: 0 auto;
     max-width: 30em; // As close to 66 characters per line as possible.
   }
+
 }

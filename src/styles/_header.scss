@@ -1,0 +1,14 @@
+header {
+
+  background: $red;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .header-title {
+    font-family: $font-family-heading;
+    color: white;
+  }
+
+}

@@ -6,9 +6,9 @@ import Footer from './Footer';
 const Wrapper = (props) => {
   return (
     <div className="wrapper">
-      <header className="header"><Header /></header>
-      <main className="main"><Main /></main>
-      <footer className="footer"><Footer /></footer>
+      <header><Header /></header>
+      <main><Main /></main>
+      <footer><Footer /></footer>
     </div>
   );
 };
