@@ -12,7 +12,7 @@ main {
   /* Typography */
   h1, h2, h3, h4 {
     font-family: $font-family-heading;
-    margin: 0;
+    margin: 1em 0 0 0;
   }
   h1 {
     font-size: $font-size-4x;
@@ -54,16 +54,14 @@ main {
 
   blockquote {
     margin: 0 2em 1em 2em;
-    p {
-      font-style: italic;
-      color: #222;
-      margin-bottom: 0.5em;
-    }
-    cite {
-      font-weight: 700;
-      font-style: normal;
-      color: #444;
-    }
+    font-style: italic;
+    color: #222;
+    margin-bottom: 0.5em;
+  }
+  cite {
+    font-weight: 700;
+    font-style: normal;
+    color: #444;
   }
 
   a, a:visited {
@@ -78,7 +76,7 @@ main {
     color: white;
   }
 
-  p, li, blockquote {
+  p, li, blockquote, cite {
     font-family: $font-family-base;
   }
   code {
@@ -86,7 +84,7 @@ main {
     font-size: $font-size-small;
   }
 
-  h1, h2, h3, h4, p, li, cite, a, a:visited, code, span {
+  h1, h2, h3, h4, p, li, blockquote, cite, a, a:visited, code, span {
     &::selection {
       background: $red;
       color: white;
