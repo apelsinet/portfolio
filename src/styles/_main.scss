@@ -53,10 +53,11 @@ main {
   }
 
   blockquote {
-    margin: 0 2em 1em 2em;
+    margin: 0 0 1em 0;
+    padding: 0 2em 0 2em;
     font-style: italic;
     color: #222;
-    margin-bottom: 0.5em;
+    border-left: 1px dashed #222;
   }
   cite {
     margin: 0 2em 0 2em;
