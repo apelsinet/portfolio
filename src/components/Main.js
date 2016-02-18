@@ -1,5 +1,7 @@
 import React, {PropTypes} from 'react';
 let ReactMarkdown = require('react-markdown');
+let hljs = require('highlight.js');
+hljs.initHighlightingOnLoad();
 
 let input = [
   '# Live demo\n\nChanges are automatically rendered as you type.\n\n* Follows the ',
@@ -13,7 +15,23 @@ let input = [
   'getElementById(\'content\')\n);\n```\n\nPretty neat, eh?\n\n', '## More info?\n\n',
   'Read usage information and more on [GitHub](//github.com/rexxars/react-markdown)\n\n',
   '---------------\n\n',
-  'A component by [VaffelNinja](http://vaffel.ninja) / Espen Hovlandsdal'
+  'A component by [VaffelNinja](http://vaffel.ninja) / Espen Hovlandsdal\n\n',
+  '```html\n',
+  '<html>\n',
+  '  <head>\n',
+  '    <title></title>\n',
+  '    <link rel="stylesheet" href="somedomain.com/style.css"/>\n',
+  '  </head>\n',
+  '</html>\n',
+  '```\n',
+  'Some c++\n',
+  '```c++\n',
+  '#include <iostream>\n',
+  'int main() {\n',
+  '  std::cout << "Hellow World!";\n',
+  '  //commented text goes here\n',
+  '}\n',
+  '```\n'
 ].join('');
 
 const Main = (props) => {
@@ -40,9 +58,6 @@ const Main = (props) => {
       <section>
         <h3>Heading</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <pre><code>
-        // this is a "comment"
-        </code></pre>
       </section>
       <section>
         <h4>Heading</h4>
