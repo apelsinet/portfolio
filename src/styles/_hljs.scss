@@ -57,7 +57,7 @@
 }
 
 .hljs-meta {
-  color: $purple;
+  color: tint($purple, 20);
 }
 
 .hljs-title,
