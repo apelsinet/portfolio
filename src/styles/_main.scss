@@ -85,8 +85,9 @@ main {
     font-family: $font-family-code;
     font-size: $font-size-small;
     padding: 0.3em;
-    border: 1px dashed $red;
-    color: #111;
+    border-radius: 0.5em;
+    background: $red;
+    color: white;
     font-weight: 700;
   }
   pre > code {
