@@ -66,9 +66,14 @@ main {
     color: #444;
   }
 
-  a, a:visited {
+  a {
     color: $red;
+  }
+  a, a:visited {
     text-decoration: none;
+  }
+  a:visited {
+    color: shade($red, 20);
   }
   a:hover {
     text-decoration: underline;

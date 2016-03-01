@@ -1,14 +1,31 @@
 header {
 
+  .bar {
   background: $red;
-  height: 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 1vh;
+  }
 
-  .header-title {
+  h1, h2, h3, h4 {
     font-family: $font-family-heading;
     color: white;
+  }
+  h1 {
+    font-size: $font-size-4x;
+  }
+
+  .header-image {
+    background-size: contain;
+    height: 99vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: $screen-xs-min) {
+      background: url("http://apelsinet.noip.me/assets/portfolio/orion_compressed_4x.jpg") no-repeat center;
+      height: 49vh;
+    }
+    @media (min-width: $screen-xs-min) {
+      background: url("http://apelsinet.noip.me/assets/portfolio/orion_compressed.jpg") no-repeat center;
+    }
   }
 
 }
