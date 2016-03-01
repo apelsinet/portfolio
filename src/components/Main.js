@@ -1,7 +1,5 @@
 import React, {PropTypes} from 'react';
 let ReactMarkdown = require('react-markdown');
-let hljs = require('highlight.js');
-hljs.initHighlightingOnLoad();
 
 let input = [
   '# Live demo\n\nChanges are automatically rendered as you type.\n\n* Follows the ',
