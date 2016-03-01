@@ -1,0 +1,24 @@
+footer {
+  background: $red;
+  height: $font-size-4x;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1em 0.5em -1em black inset;
+
+  svg {
+    fill: white;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    cursor: pointer;
+    width: $font-size-2x;
+    height: $font-size-2x;
+
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+  }
+
+}

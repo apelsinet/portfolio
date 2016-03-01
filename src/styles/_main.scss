@@ -9,6 +9,9 @@ main {
     max-width: $screen-lg-min;
   }
 
+  /* Fix for overflowing margins */
+  overflow: auto;
+
   /* Typography */
   h1, h2, h3, h4 {
     font-family: $font-family-heading;
@@ -120,6 +123,9 @@ main {
       h1, h2, h3 {
         margin-top: 0.5em;
       }
+    }
+    &:last-child {
+      margin-bottom: $font-size-4x;
     }
   }
 
