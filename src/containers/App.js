@@ -3,7 +3,10 @@
 import React, {PropTypes} from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import Wrapper from '../components/Wrapper';
+import Burgermenu from '../components/Burgermenu';
+import Header from '../components/Header';
+import Main from '../components/Main';
+import Footer from '../components/Footer';
 import * as PortfolioActions from '../actions/portfolioActions';
 
 class App extends React.Component {
@@ -11,7 +14,12 @@ class App extends React.Component {
     const { portfolioAppState, actions } = this.props;
 
     return (
-      <Wrapper />
+      <div id="wrapper">
+        <Burgermenu />
+        <header><Header /></header>
+        <main><Main /></main>
+        <footer><Footer /></footer>
+      </div>
     );
   }
 }

@@ -17,16 +17,18 @@
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 1em !important;
+  /*height: 1em !important;
   width: 1em !important;
+  right: -2em !important;
   button {
     cursor: pointer;
-  }
+  }*/
+  display: none;
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #333;
+  // background: #333;
 }
 
 /* General sidebar styles */
@@ -55,7 +57,14 @@
   }
   a, a:visited {
     font-family: $font-family-heading;
-    padding: calc(12.5vh - 18px) 0 calc(12.5vh - 18px) 0; // font-size is 36px
+    padding: calc(12.5vh - 18px) 0 calc(12.5vh - 17px) 0; // font-size is 36px
+    @media (min-width: $screen-sm-min) {
+      padding: calc(12.5vh - 12px) 0 calc(12.5vh - 11px) 0; // font-size is 24px
+    }
+    @media (min-width: $screen-lg-min) {
+      padding: calc(12.5vh - 18px) 0 calc(12.5vh - 17px) 0; // font-size is 36px
+    }
+    border-bottom: 1px solid shade($red, 20);
     color: white;
     text-decoration: none;
     text-align: center;
