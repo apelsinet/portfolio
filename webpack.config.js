@@ -26,6 +26,8 @@ const getPlugins = function (env) {
       plugins.push(new ExtractTextPlugin('styles.css'));
       plugins.push(new webpack.optimize.DedupePlugin());
       plugins.push(new webpack.optimize.UglifyJsPlugin());
+      plugins.push(new webpack.optimize.LimitChunkCountPlugin({maxChunks: 15}));
+      plugins.push(new webpack.optimize.MinChunkSizePlugin({minChunkSize: 10000}));
       break;
 
     case developmentEnvironment:
@@ -50,7 +52,7 @@ const getEntry = function (env) {
 };
 
 const getLoaders = function (env) {
-  const loaders = [{ test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel', 'eslint'] }, {test: /\.json$/, loader: 'json'}, {test: /\.jpg$/, loader: 'file-loader'}, {test: require.resolve("react-burger-menu"), loader: "imports?this=>window"}];
+  const loaders = [{ test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel', 'eslint'] }, {test: /\.json$/, loader: 'json'}, {test: /\.jpg$/, loader: 'file-loader'}];
 
   if (env === productionEnvironment ) {
     // generate separate physical stylesheet for production build using ExtractTextPlugin. This provides separate caching and avoids a flash of unstyled content on load.
