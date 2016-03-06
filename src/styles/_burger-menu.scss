@@ -1,0 +1,79 @@
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  left: 1em;
+  top: 1em;
+  button {
+    cursor: pointer;
+  }
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: $red;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 1em !important;
+  width: 1em !important;
+  button {
+    cursor: pointer;
+  }
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #333;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  width: 100%;
+  background: $red;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: $red;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  font-size: 36px;
+  @media (min-width: $screen-sm-min) {
+    font-size: 24px;
+  }
+  @media (min-width: $screen-lg-min) {
+    font-size: 36px;
+  }
+  a, a:visited {
+    font-family: $font-family-heading;
+    padding: calc(12.5vh - 18px) 0 calc(12.5vh - 18px) 0; // font-size is 36px
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    opacity: 0.8 !important;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+
+  }
+  a:hover {
+    opacity: 1 !important;
+    background: shade($red, 20);
+  }
+  a:active {
+    background: $red;
+    color: white;
+  }
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.7) !important;
+}

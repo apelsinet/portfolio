@@ -50,7 +50,7 @@ const getEntry = function (env) {
 };
 
 const getLoaders = function (env) {
-  const loaders = [{ test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel', 'eslint'] }, {test: /\.json$/, loader: 'json'}, {test: /\.jpg$/, loader: 'file-loader'}];
+  const loaders = [{ test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel', 'eslint'] }, {test: /\.json$/, loader: 'json'}, {test: /\.jpg$/, loader: 'file-loader'}, {test: require.resolve("react-burger-menu"), loader: "imports?this=>window"}];
 
   if (env === productionEnvironment ) {
     // generate separate physical stylesheet for production build using ExtractTextPlugin. This provides separate caching and avoids a flash of unstyled content on load.
