@@ -1,14 +1,16 @@
 import React from 'react';
 import {render} from 'react-dom';
-import { Provider } from 'react-redux';
-import App from './containers/App';
-import configureStore from './store/configureStore';
 import './styles/styles.scss'; //Yep, that's right. You can import SASS/CSS files too! Webpack will run the associated loader and plug this into the page.
-
-const store = configureStore();
+import Burgermenu from './components/Burgermenu';
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
 
 render(
-  <Provider store={store}>
-    <App />
-  </Provider>, document.getElementById('app')
+  <div id="wrapper">
+    <Burgermenu />
+    <header><Header /></header>
+    <main><Main /></main>
+    <footer><Footer /></footer>
+  </div>, document.getElementById('app')
 );

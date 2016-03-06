@@ -1,7 +1,11 @@
 {
-  "name": "react-slingshot",
-  "version": "1.1.1",
-  "description": "Starter kit for creating apps with React and Redux",
+  "name": "apelsinet-portfolio",
+  "version": "0.1.0",
+  "description": "Portfolio of Mattias Prada. Built on top of react-slingshot.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/apelsinet/portfolio.git"
+  },
   "scripts": {
     "prestart": "npm run remove-dist",
     "start": "parallelshell \"npm run lint:tools\" \"npm run test:watch\" \"npm run open:src\"",
@@ -16,7 +20,7 @@
     "test": "cross-env NODE_ENV=test mocha --reporter progress --compilers js:babel/register --recursive \"./src/**/*.spec.js\"",
     "test:watch": "npm run test -- --watch"
   },
-  "author": "Cory House",
+  "author": "Mattias Prada",
   "license": "MIT",
   "dependencies": {
     "imports-loader": "0.6.5",
@@ -25,9 +29,7 @@
     "react": "0.14.7",
     "react-burger-menu": "1.5.3",
     "react-dom": "0.14.7",
-    "react-markdown": "1.2.4",
-    "react-redux": "4.4.0",
-    "redux": "3.3.1"
+    "react-markdown": "1.2.4"
   },
   "devDependencies": {
     "autoprefixer": "6.3.1",
