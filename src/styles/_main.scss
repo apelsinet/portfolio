@@ -129,7 +129,7 @@ main {
     }
   }
 
-  svg.computer {
+  .svg-computer {
     width: 10em;
     display: block;
     margin: $font-size-2x auto;
@@ -137,12 +137,6 @@ main {
     &:hover {
       transform: scale(1.2);
       transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-    .background {
-      fill: $yellow;
-    }
-    .table {
-      fill: $red;
     }
   }
 
