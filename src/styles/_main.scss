@@ -66,7 +66,7 @@ main {
     margin: 0 2em 0 2em;
     font-weight: 700;
     font-style: normal;
-    color: #444;
+    color: #222;
   }
 
   a {
@@ -86,7 +86,7 @@ main {
     color: white;
   }
 
-  p, li, blockquote, cite {
+  p, li, blockquote, cite, figcaption {
     font-family: $font-family-base;
   }
   code {
@@ -108,7 +108,7 @@ main {
     white-space: pre-wrap;
   }
 
-  h1, h2, h3, h4, p, li, blockquote, cite, a, a:visited, code, span {
+  h1, h2, h3, h4, p, li, blockquote, cite, figcaption, a, a:visited, code, span, img, object {
     &::selection {
       background: $red;
       color: white;
@@ -137,6 +137,28 @@ main {
     &:hover {
       transform: scale(1.2);
       transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+  }
+
+  figure {
+    margin-bottom: 1em;
+    @media (min-width: $screen-lg-min) {
+      max-width: 15em;
+      float: right;
+      margin: 0.5em 0 1em 1em;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+    figcaption {
+      color: #333;
+      text-align: center;
+      font-style: italic;
+      @media (min-width: $screen-sm-min) {
+        font-size: $font-size-small;
+      }
     }
   }
 
