@@ -23,18 +23,22 @@ main {
     left: -0.08em; // align heading with paragraph
   }
   h2 {
-    font-size: $font-size-3x;
     position: relative;
-    left: -0.07em;
+    font-size: $font-size-2x;
+    left: -0.05em;
+    @media (min-width: $screen-sm-min) {
+      font-size: $font-size-3x;
+      left: -0.07em;
+    }
   }
   h3 {
-    font-size: $font-size-2x;
+    font-size: $font-size-base;
     text-transform: uppercase;
     position: relative;
-    left: -0.05em;
+    left: -0.03em;
   }
   h4 {
-    font-size: $font-size-base;
+    font-size: $font-size-small;
     text-transform: uppercase;
   }
 
@@ -148,14 +152,17 @@ main {
       margin: 0.5em 0 1em 1em;
     }
     img {
+      font-size: $font-size-small; // make border-radius same size as code border-radius
       max-width: 100%;
       display: block;
       margin: 0 auto;
+      border-radius: 0.5em;
     }
     figcaption {
       color: #333;
       text-align: center;
       font-style: italic;
+      margin-top: 0.5em;
       @media (min-width: $screen-sm-min) {
         font-size: $font-size-small;
       }
