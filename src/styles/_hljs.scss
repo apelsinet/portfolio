@@ -4,6 +4,10 @@
   padding: 0.5em;
   background: #232323;
   color: #e6e1dc;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  &:hover{
+    background: #111;
+  }
 }
 
 .hljs-comment,
