@@ -2,14 +2,15 @@ import React, {PropTypes} from 'react';
 let Menu = require('react-burger-menu').bubble;
 let isMenuOpen = function(state) {
   if (state.isOpen == true) {
-    document.body.style.overflowY = "hidden";
+    document.body.style.overflow = "hidden";
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-      document.body.style.position = "fixed";
+      document.body.style.position = "fixed"; // fix for mobile devices that don't handle body overflow correct
+      document.body.style.width = "100%";
     }
-    document.getElementById("wrapper").style.overflowY = "scroll";
+    document.getElementById("wrapper").style.overflowY = "scroll"; // replace missing scrollbar with new one that's locked
   }
   else {
-    document.body.style.overflowY = "auto";
+    document.body.style.overflow = "auto";
     document.body.style.position = "static";
     document.getElementById("wrapper").style.overflowY = "hidden";
   }
