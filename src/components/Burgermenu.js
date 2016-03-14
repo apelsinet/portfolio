@@ -1,4 +1,6 @@
 import React, {PropTypes} from 'react';
+import { Link, IndexLink } from 'react-router';
+
 let Menu = require('react-burger-menu').bubble;
 let isMenuOpen = function(state) {
   if (state.isOpen == true) {
@@ -20,10 +22,12 @@ let isMenuOpen = function(state) {
 const Burgermenu = (props) => {
   return (
     <Menu onStateChange={isMenuOpen} width={280}>
-      <a id="home" className="menu-item" href="/">Home</a>
-      <a id="about" className="menu-item" href="/about">About</a>
-      <a id="contact" className="menu-item" href="/contact">Contact</a>
-      <a className="menu-item--small" href="">Settings</a>
+      <ul role="nav">
+        <IndexLink to="/" activeStyle={{ color: '#222' }}><li className="menu-item">Home</li></IndexLink>
+        <Link to="/about" activeStyle={{ color: '#222' }}><li className="menu-item">About</li></Link>
+        <Link to="/about"><li className="menu-item">Contact</li></Link>
+        <Link to="/about"><li className="menu-item">Whatever</li></Link>
+      </ul>
     </Menu>
   );
 };

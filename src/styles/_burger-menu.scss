@@ -49,8 +49,14 @@
   @media (min-width: $screen-lg-min) {
     font-size: 36px;
   }
-  a, a:visited {
+
+  li {
     font-family: $font-family-heading;
+    text-align: center;
+    opacity: 0.8 !important;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+    border-bottom: 1px solid shade($red, 20);
+
     padding: calc(12.5vh - 18px) 0 calc(12.5vh - 17px) 0; // font-size is 36px
     @media (min-width: $screen-sm-min) {
       padding: calc(12.5vh - 12px) 0 calc(12.5vh - 11px) 0; // font-size is 24px
@@ -58,21 +64,16 @@
     @media (min-width: $screen-lg-min) {
       padding: calc(12.5vh - 18px) 0 calc(12.5vh - 17px) 0; // font-size is 36px
     }
-    border-bottom: 1px solid shade($red, 20);
+
+    &:hover {
+      opacity: 1 !important;
+      background: shade($red, 20);
+    }
+  }
+
+  a {
     color: white;
     text-decoration: none;
-    text-align: center;
-    opacity: 0.8 !important;
-    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
-
-  }
-  a:hover {
-    opacity: 1 !important;
-    background: shade($red, 20);
-  }
-  a:active {
-    background: $red;
-    color: white;
   }
 }
 

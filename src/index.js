@@ -1,16 +1,18 @@
 import React from 'react';
 import {render} from 'react-dom';
+import { Router, Route, browserHistory, IndexRoute } from 'react-router';
+import App from './components/App';
+import Home from './modules/Home';
+import About from './modules/About';
 import './styles/styles.scss';
-import Burgermenu from './components/Burgermenu';
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
+
 
 render(
-  <div id="wrapper">
-    <Burgermenu />
-    <Header />
-    <Main />
-    <Footer />
-  </div>, document.getElementById('app')
+  <Router history={browserHistory}>
+    <Route path="/" component={App}>
+      <IndexRoute component={Home}/>
+      <Route path="/about" component={About}/>
+    </Route>
+  </Router>
+, document.getElementById('app')
 );

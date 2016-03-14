@@ -1,5 +1,4 @@
 import React, {PropTypes} from 'react';
-
 const Home = (props) => {
   return (
     <div>
@@ -26,10 +25,10 @@ const Home = (props) => {
         <pre><code className="css">{`body { color: blue; }`}</code></pre>
         <p>Add a touch of html.</p>
         <pre><code className="html">{`<html>
-<head>
-  <title></title>
-  <link rel='stylesheet' href='somedomain.com/style.css'/>
-</head>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='somedomain.com/style.css'/>
+  </head>
 </html>`}</code></pre>
         <p>Here comes the javascript</p>
         <pre><code className="javascript">{`var React = require('react');
@@ -42,8 +41,8 @@ React.render(
       <p>Finally, onwards with some c++</p>
       <pre><code className="c++">{`#include <iostream>
 int main() {
-std::cout << "Hellow World!";
-//commented text goes here
+  std::cout << "Hellow World!";
+  //commented text goes here
 }`}</code></pre>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
