@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 import { Link, IndexLink } from 'react-router';
 
 let Menu = require('react-burger-menu').bubble;
@@ -19,17 +19,17 @@ let isMenuOpen = function(state) {
   return state.isOpen;
 };
 
-const Burgermenu = (props) => {
-  return (
-    <Menu onStateChange={isMenuOpen} width={280}>
-      <ul role="nav">
-        <IndexLink to="/" activeStyle={{ color: '#222' }}><li className="menu-item">Home</li></IndexLink>
-        <Link to="/about" activeStyle={{ color: '#222' }}><li className="menu-item">About</li></Link>
-        <Link to="/about"><li className="menu-item">Contact</li></Link>
-        <Link to="/about"><li className="menu-item">Whatever</li></Link>
-      </ul>
-    </Menu>
-  );
-};
-
-export default Burgermenu;
+export default class Burgermenu extends React.Component {
+  render() {
+    return (
+      <Menu onStateChange={isMenuOpen} width={280}>
+        <ul role="nav">
+          <IndexLink to="/" activeStyle={{ color: '#222' }}><li className="menu-item">Home</li></IndexLink>
+          <Link to="/about" activeStyle={{ color: '#222' }}><li className="menu-item">About</li></Link>
+          <Link to="/about"><li className="menu-item">Contact</li></Link>
+          <Link to="/about"><li className="menu-item">Whatever</li></Link>
+        </ul>
+      </Menu>
+    );
+  }
+}

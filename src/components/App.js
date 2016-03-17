@@ -3,7 +3,10 @@ import Burgermenu from './Burgermenu';
 import Header from './Header';
 import Footer from './Footer';
 
-export default React.createClass({
+export default class App extends React.Component {
+  componentDidUpdate() {
+    window.Prism.highlightAll(); // Reloads Prism syntax highlighting after react routings.
+  }
   render() {
     return (
       <div id="wrapper">
@@ -16,4 +19,4 @@ export default React.createClass({
       </div>
     );
   }
-});
+}
