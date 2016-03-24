@@ -46,7 +46,7 @@ main {
     color: #333;
     font-size: $font-size-base;
     line-height: 1.3em;
-    margin: 0 0 $font-size-base 0;
+    margin: 0 0 $font-size-2x 0;
   }
 
   ul {
@@ -60,34 +60,33 @@ main {
   }
 
   blockquote {
-    margin: 0 0 1em 0;
-    padding: 0 2em 0 2em;
+    margin: $font-size-2x;
     font-style: italic;
     color: #222;
-    border-left: 1px dashed #222;
   }
   cite {
-    margin: 0 2em 0 2em;
     font-weight: 700;
     font-style: normal;
     color: #222;
+    text-align: right;
+    margin-top: 1em;
+    display: block;
   }
 
   a {
     color: $red;
-  }
-  a, a:visited {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-skip: ink;
   }
   a:visited {
     color: shade($red, 20);
   }
   a:hover {
-    text-decoration: underline;
   }
   a:active {
     background: $red;
     color: white;
+    text-decoration: none;
   }
 
   p, li, blockquote, cite, figcaption {
@@ -95,11 +94,15 @@ main {
   }
 
   pre {
+    font-size: $font-size-base; // Make border-radius size align with rest of site.
+    line-height: $font-size-small; // Adjust line-height accordingly.
+    margin-bottom: $font-size-2x;
+  }
+  code {
     font-size: $font-size-small;
-    margin-bottom: 1em;
   }
 
-  h1, h2, h3, h4, p, li, blockquote, cite, figcaption, a, a:visited, code, span, img, object {
+  h1, h2, h3, h4, p, li, blockquote, cite, figcaption, a, a:visited, code, span, img, object, input, textarea {
     &::selection {
       background: $red;
       color: white;

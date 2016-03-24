@@ -5,6 +5,9 @@ footer {
   align-items: center;
   justify-content: center;
   box-shadow: 0 1em 0.5em -1em #222 inset;
+  .row {
+    display: block;
+  }
 
   svg {
     fill: white;

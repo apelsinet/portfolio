@@ -79,5 +79,9 @@
 
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.7) !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.burger-menu-active {
+  color: $blue;
 }

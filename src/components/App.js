@@ -7,6 +7,7 @@ export default class App extends React.Component {
   componentDidUpdate() {
     window.Prism.highlightAll(); // Reloads Prism syntax highlighting after react routings.
   }
+
   render() {
     return (
       <div id="wrapper">
@@ -20,3 +21,7 @@ export default class App extends React.Component {
     );
   }
 }
+
+App.propTypes = {
+  children: React.PropTypes.element.isRequired
+};
