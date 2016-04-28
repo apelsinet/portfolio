@@ -26,8 +26,8 @@ export default class Burgermenu extends React.Component {
         <ul role="nav">
           <IndexLink to="/" activeStyle={{ color: '#222' }}><li className="menu-item">Home</li></IndexLink>
           <Link to="/about" activeStyle={{ color: '#222' }}><li className="menu-item">About</li></Link>
-          <Link to="/about"><li className="menu-item">Blog</li></Link>
-          <Link to="/about"><li className="menu-item">Whatever</li></Link>
+          <Link to="/blog" activeStyle={{ color: '#222' }}><li className="menu-item">Blog</li></Link>
+          <Link to="/contact" activeStyle={{ color: '#222' }}><li className="menu-item">Contact</li></Link>
         </ul>
       </Menu>
     );

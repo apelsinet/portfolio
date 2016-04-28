@@ -1,161 +1,164 @@
 main {
-  /* Responsive page-width */
-  margin: 0 auto;
-  max-width: $screen-xs-min;
-  @media (min-width: $screen-sm-min) {
-    max-width: $screen-sm-min;
-  }
-  @media (min-width: $screen-lg-min) {
-    max-width: $screen-lg-min;
-  }
+	/* Responsive page-width */
+	margin: 0 auto;
+	max-width: $screen-xs-min;
+	@media (min-width: $screen-sm-min) {
+		max-width: $screen-sm-min;
+	}
+	@media (min-width: $screen-lg-min) {
+		max-width: $screen-lg-min;
+	}
 
-  /* Fix for overflowing margins */
-  overflow: auto;
+	/* Fix for overflowing margins */
+	overflow: auto;
 
-  /* Typography */
-  h1, h2, h3, h4 {
-    font-family: $font-family-heading;
-    margin: 1em 0 0.2em 0;
-  }
-  h1 {
-    font-size: $font-size-4x;
-    position: relative;
-    left: -0.08em; // align heading with paragraph
-  }
-  h2 {
-    position: relative;
-    font-size: $font-size-2x;
-    left: -0.05em;
-    @media (min-width: $screen-sm-min) {
-      font-size: $font-size-3x;
-      left: -0.07em;
-    }
-  }
-  h3 {
-    font-size: $font-size-base;
-    text-transform: uppercase;
-    position: relative;
-    left: -0.03em;
-  }
-  h4 {
-    font-size: $font-size-small;
-    text-transform: uppercase;
-  }
+	/* Typography */
+	h1, h2, h3, h4 {
+		font-family: $font-family-heading;
+		margin: 1em 0 0.2em 0;
+	}
+	h1 {
+		font-size: $font-size-4x;
+		position: relative;
+		left: -0.08em; // align heading with paragraph
+	}
+	h2 {
+		position: relative;
+		font-size: $font-size-2x;
+		left: -0.05em;
+		@media (min-width: $screen-sm-min) {
+			font-size: $font-size-3x;
+			left: -0.07em;
+		}
+	}
+	h3 {
+		font-size: $font-size-base;
+		text-transform: uppercase;
+		position: relative;
+		left: -0.03em;
+	}
+	h4 {
+		font-size: $font-size-small;
+		text-transform: uppercase;
+	}
 
-  p, li {
-    color: #333;
-    font-size: $font-size-base;
-    line-height: 1.3em;
-    margin: 0 0 $font-size-2x 0;
-  }
+	p, li {
+		color: #333;
+		font-size: $font-size-base;
+		line-height: 1.3em;
+		margin: 0 0 $font-size-2x 0;
+	}
 
-  ul {
-    list-style: none;
-  }
-  ul li:before {
-    content: '»';
-    margin: 0 0.4em 0 -0.77em;
-    position: relative;
-    top: -0.05em;
-  }
+	ul {
+		list-style: none;
+	}
+	ul li:before {
+		content: '»';
+		margin: 0 0.4em 0 -0.77em;
+		position: relative;
+		top: -0.05em;
+	}
 
-  blockquote {
-    margin: $font-size-2x;
-    font-style: italic;
-    color: #222;
-  }
-  cite {
-    font-weight: 700;
-    font-style: normal;
-    color: #222;
-    text-align: right;
-    margin-top: 1em;
-    display: block;
-  }
+	blockquote {
+		margin: $font-size-2x;
+		font-style: italic;
+		color: #222;
+	}
+	cite {
+		font-weight: 700;
+		font-style: normal;
+		color: #222;
+		text-align: right;
+		margin-top: 1em;
+		display: block;
+	}
 
-  a {
-    color: $red;
-    text-decoration: underline;
-    text-decoration-skip: ink;
-  }
-  a:visited {
-    color: shade($red, 20);
-  }
-  a:hover {
-  }
-  a:active {
-    background: $red;
-    color: white;
-    text-decoration: none;
-  }
+	a {
+		color: $red;
+		text-decoration: underline;
+		text-decoration-skip: ink;
+	}
+	a:visited {
+		color: shade($red, 20);
+	}
+	a:hover {
+	}
+	a:active {
+		background: $red;
+		color: white;
+		text-decoration: none;
+	}
 
-  p, li, blockquote, cite, figcaption {
-    font-family: $font-family-base;
-  }
+	p, li, blockquote, cite, figcaption {
+		font-family: $font-family-base;
+	}
 
-  pre {
-    font-size: $font-size-base; // Make border-radius size align with rest of site.
-    line-height: $font-size-small; // Adjust line-height accordingly.
-    margin-bottom: $font-size-2x;
-  }
-  code {
-    font-size: $font-size-small;
-  }
+	pre {
+		font-size: $font-size-base; // Make border-radius size align with rest of site.
+		line-height: $font-size-small; // Adjust line-height accordingly.
+		margin-bottom: $font-size-2x;
+	}
+	code {
+		font-size: $font-size-small;
+	}
 
-  h1, h2, h3, h4, p, li, blockquote, cite, figcaption, a, a:visited, code, span, img, object, input, textarea {
-    &::selection {
-      background: $red;
-      color: white;
-    }
-  }
+	h1, h2, h3, h4, p, li, blockquote, cite, figcaption, a, a:visited, code, span, img, object, input, textarea {
+		&::selection {
+			background: $red;
+			color: white;
+		}
+	}
 
-  section {
-    padding: 0 $font-size-2x 0 $font-size-2x;
-    margin: 0 auto;
-    max-width: 30em; // As close to 66 characters per line as possible.
-    &:first-child {
-      h1, h2, h3 {
-        margin-top: 0.5em;
-      }
-    }
-    &:last-child {
-      margin-bottom: $font-size-4x;
-    }
-  }
+	section {
+		padding: 0 $font-size-2x 0 $font-size-2x;
+		margin: 0 auto;
+		max-width: 30em; // As close to 66 characters per line as possible.
+		&:first-child {
+			h1, h2, h3 {
+				margin-top: 0.5em;
+			}
+		}
+		&:last-child {
+			margin-bottom: $font-size-4x;
+		}
+	}
 
-  .svg-computer {
-    width: 10em;
-    display: block;
-    margin: $font-size-2x auto;
-    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    &:hover {
-      transform: scale(1.2);
-    }
-  }
+	.svg-computer {
+		width: 10em;
+		display: block;
+		margin: $font-size-2x auto;
+		transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
 
-  figure {
-    margin-bottom: 1em;
-    @media (min-width: $screen-lg-min) {
-      max-width: 15em;
-      float: right;
-      margin: 0.5em 0 1em 1em;
-    }
-    img {
-      font-size: $font-size-small; // make border-radius same size as code border-radius
-      max-width: 100%;
-      display: block;
-      margin: 0 auto;
-      border-radius: 0.5em;
-    }
-    figcaption {
-      color: #333;
-      text-align: center;
-      font-style: italic;
-      margin-top: 0.5em;
-      @media (min-width: $screen-sm-min) {
-        font-size: $font-size-small;
-      }
-    }
-  }
+	figure {
+		margin-bottom: 1em;
+		@media (min-width: $screen-lg-min) {
+			max-width: 15em;
+			float: right;
+			margin: 0.5em 0 1em 1em;
+		}
+		img {
+			font-size: $font-size-small; // make border-radius same size as code border-radius
+			max-width: 100%;
+			display: block;
+			margin: 0 auto;
+			border-radius: 0.5em;
+		}
+		figcaption {
+			color: #333;
+			text-align: center;
+			font-style: italic;
+			margin-top: 0.5em;
+			@media (min-width: $screen-sm-min) {
+				font-size: $font-size-small;
+			}
+		}
+	}
 
+	.publication-date {
+		font-style: italic;
+	}
 }
