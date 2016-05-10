@@ -22,7 +22,7 @@ let isMenuOpen = function(state) {
 export default class Burgermenu extends React.Component {
   render() {
     return (
-      <Menu onStateChange={isMenuOpen} width={280}>
+      <Menu onStateChange={isMenuOpen} width={280} isOpen={false}>
         <ul role="nav">
           <IndexLink to="/" activeStyle={{ color: '#222' }}><li className="menu-item">Home</li></IndexLink>
           <Link to="/about" activeStyle={{ color: '#222' }}><li className="menu-item">About</li></Link>

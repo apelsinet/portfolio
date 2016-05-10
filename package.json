@@ -27,7 +27,7 @@
     "json-loader": "0.5.4",
     "object-assign": "4.0.1",
     "react": "0.14.7",
-    "react-burger-menu": "1.5.3",
+    "react-burger-menu": "1.8.2",
     "react-dom": "0.14.7",
     "react-router": "2.0.1"
   },
