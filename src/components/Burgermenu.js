@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, IndexLink } from 'react-router';
 
-let Menu = require('react-burger-menu').bubble;
+let Menu = require('react-burger-menu').slide;
 let isMenuOpen = function(state) {
   if (state.isOpen == true) {
     document.body.style.overflow = "hidden";
