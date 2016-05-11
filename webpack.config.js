@@ -11,81 +11,86 @@ const productionEnvironment = 'production';
 const testEnvironment = 'test';
 
 const getPlugins = function (env) {
-  const GLOBALS = {
-    'process.env.NODE_ENV': JSON.stringify(env),
-    __DEV__: env === developmentEnvironment
-  };
+	const GLOBALS = {
+		'process.env.NODE_ENV': JSON.stringify(env),
+		__DEV__: env === developmentEnvironment
+	};
 
-  const plugins = [
-    new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.DefinePlugin(GLOBALS) //Tells React to build in prod mode. https://facebook.github.io/react/downloads.html
-  ];
+	const plugins = [
+		new webpack.optimize.OccurenceOrderPlugin(),
+		new webpack.DefinePlugin(GLOBALS) //Tells React to build in prod mode. https://facebook.github.io/react/downloads.html
+	];
 
-  switch (env) {
-    case productionEnvironment:
-      plugins.push(new ExtractTextPlugin('styles.css'));
-      plugins.push(new webpack.optimize.DedupePlugin());
-      plugins.push(new webpack.optimize.UglifyJsPlugin());
-      plugins.push(new webpack.optimize.LimitChunkCountPlugin({maxChunks: 15}));
-      plugins.push(new webpack.optimize.MinChunkSizePlugin({minChunkSize: 10000}));
-      break;
+	switch (env) {
+		case productionEnvironment:
+			plugins.push(new ExtractTextPlugin('styles.css'));
+			plugins.push(new webpack.optimize.DedupePlugin());
+			plugins.push(new webpack.optimize.UglifyJsPlugin({
+				compress: {
+					warnings: false,
+					screw_ie8: true
+				},
+				comments: false,
+				sourceMap: false
+			}));
+			break;
 
-    case developmentEnvironment:
-      plugins.push(new webpack.HotModuleReplacementPlugin());
-      plugins.push(new webpack.NoErrorsPlugin());
-      break;
-  }
+		case developmentEnvironment:
+			plugins.push(new webpack.HotModuleReplacementPlugin());
+			plugins.push(new webpack.NoErrorsPlugin());
+			break;
+	}
 
-  return plugins;
+	return plugins;
 };
 
 const getEntry = function (env) {
-  const entry = [];
+	const entry = [];
 
-  if (env === developmentEnvironment ) { // only want hot reloading when in dev.
-    entry.push('webpack-hot-middleware/client');
-  }
+	if (env === developmentEnvironment ) { // only want hot reloading when in dev.
+		entry.push('webpack-hot-middleware/client');
+	}
 
-  entry.push('./src/index');
+	entry.push('./src/index');
 
-  return entry;
+	return entry;
 };
 
 const getLoaders = function (env) {
-  const loaders = [
-    { test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel', 'eslint'] },
-    { test: /\.json$/, loader: 'json' },
-    { test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/, loader: 'file-loader' }
-  ];
+	const loaders = [
+		{ test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel', 'eslint'] },
+		{ test: /\.json$/, loader: 'json' },
+		{ test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/, loader: 'file-loader' }
+	];
 
-  if (env === productionEnvironment ) {
-    // generate separate physical stylesheet for production build using ExtractTextPlugin. This provides separate caching and avoids a flash of unstyled content on load.
-    loaders.push({test: /(\.css|\.scss)$/, loader: ExtractTextPlugin.extract("css?sourceMap!postcss!sass?sourceMap")});
-  } else {
-    loaders.push({test: /(\.css|\.scss)$/, loaders: ['style', 'css?sourceMap', 'postcss', 'sass?sourceMap']});
-  }
+	if (env === productionEnvironment ) {
+		// generate separate physical stylesheet for production build using ExtractTextPlugin. This provides separate caching and avoids a flash of unstyled content on load.
+		loaders.push({test: /(\.css|\.scss)$/, loader: ExtractTextPlugin.extract("css?sourceMap!postcss!sass?sourceMap")});
+	} else {
+		loaders.push({test: /(\.css|\.scss)$/, loaders: ['style', 'css?sourceMap', 'postcss', 'sass?sourceMap']});
+	}
 
-  return loaders;
+	return loaders;
 };
 
 function getConfig(env) {
-  return {
-    debug: true,
-    devtool: env === productionEnvironment  ? 'source-map' : 'cheap-module-eval-source-map', // more info:https://webpack.github.io/docs/build-performance.html#sourcemaps and https://webpack.github.io/docs/configuration.html#devtool
-    noInfo: true, // set to false to see a list of every file being bundled.
-    entry: getEntry(env),
-    target: env === testEnvironment ? 'node' : 'web', // necessary per https://webpack.github.io/docs/testing.html#compile-and-test
-    output: {
-      path: __dirname + '/dist', // Note: Physical files are only output by the production build task `npm run build`.
-      publicPath: '',
-      filename: 'bundle.js'
-    },
-    plugins: getPlugins(env),
-    module: {
-      loaders: getLoaders(env)
-    },
-    postcss: ()=> [autoprefixer]
-  };
+	return {
+		debug: true,
+		devtool: env === productionEnvironment  ? 'source-map' : 'cheap-module-eval-source-map', // more info:https://webpack.github.io/docs/build-performance.html#sourcemaps and https://webpack.github.io/docs/configuration.html#devtool
+		noInfo: true, // set to false to see a list of every file being bundled.
+		entry: getEntry(env),
+		target: env === testEnvironment ? 'node' : 'web', // necessary per https://webpack.github.io/docs/testing.html#compile-and-test
+		output: {
+			path: __dirname + '/dist', // Note: Physical files are only output by the production build task `npm run build`.
+			publicPath: '',
+			filename: 'bundle.js'
+		},
+		plugins: getPlugins(env),
+		module: {
+			loaders: getLoaders(env)
+		},
+		postcss: ()=> [autoprefixer]
+	};
 }
 
 export default getConfig;

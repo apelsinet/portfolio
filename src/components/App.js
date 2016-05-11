@@ -1,5 +1,4 @@
 import React from 'react';
-import Burgermenu from './Burgermenu';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -11,7 +10,6 @@ export default class App extends React.Component {
   render() {
     return (
       <div id="wrapper">
-        <Burgermenu />
         <Header />
         <main>
           {this.props.children}
