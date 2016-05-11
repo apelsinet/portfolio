@@ -1,0 +1,26 @@
+.menu {
+	background: $red;
+	height: 3em;
+
+	ul {
+		height: inherit;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	li {
+		font-family: $font-family-heading;
+	}
+
+	a, a:visited {
+		color: white;
+		text-decoration: none;
+		padding: 1em;
+	}
+	a:hover {
+		color: $yellow;
+	}
+
+}
