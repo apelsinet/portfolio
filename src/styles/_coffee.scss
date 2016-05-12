@@ -1,0 +1,32 @@
+.coffee-tip {
+	font-size: $font-size-small;
+	text-align: center;
+	padding: 0.5em;
+	border: 1px solid $red;
+	border-radius: 0.5em;
+	&>svg {
+		fill: #333;
+		width: 5em;
+	}
+	p {
+		font-family: $font-family-heading;
+	}
+	.coffee-tip-close {
+		width: 2em;
+		height: 2em;
+		position: relative;
+		float: right;
+		top: -2.5em;
+		right: -2.5em;
+		&>svg {
+			width: 2em;
+			height: 2em;
+			fill: $red;
+			cursor: pointer;
+			&:hover {
+				fill: #333;
+			}
+		}
+	}
+}
+
