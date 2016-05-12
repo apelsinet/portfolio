@@ -4,6 +4,7 @@
 
 // Base
 html {
+	overflow-y: scroll;
   font-size: 16px;
   @media (min-width: $screen-sm-min) {
     font-size: 24px;
