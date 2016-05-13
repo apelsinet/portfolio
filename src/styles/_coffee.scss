@@ -1,27 +1,29 @@
 .coffee-tip {
+	background: $red;
 	font-size: $font-size-small;
 	text-align: center;
 	padding: 0.5em;
+	margin: 0 auto;
 	border: 1px solid $red;
 	border-radius: 0.5em;
+	max-width: $screen-xs-min;
 	&>svg {
-		fill: #333;
+		fill: #FFF;
 		width: 5em;
 	}
 	p {
 		font-family: $font-family-heading;
+		color: #FFF;
 	}
 	.coffee-tip-close {
 		width: 2em;
 		height: 2em;
 		position: relative;
 		float: right;
-		top: -2.5em;
-		right: -2.5em;
 		&>svg {
 			width: 2em;
 			height: 2em;
-			fill: $red;
+			fill: #FFF;
 			cursor: pointer;
 			&:hover {
 				fill: #333;
