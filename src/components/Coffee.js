@@ -27,11 +27,14 @@ export default class Coffee extends React.Component {
 		}
 	}
   render() {
+		const { closeCoffeeTip } = this.props;
+
     return (
       <div className="coffee-tip">
-				<div className="coffee-tip-close"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFF" viewBox="0 0 24 24"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.6L15.6 17 12 13.4 8.4 17 7 15.6l3.6-3.6L7 8.4 8.4 7l3.6 3.6L15.6 7 17 8.4 13.4 12l3.6 3.6z"/><path fill="none" d="M0 0h24v24H0z"/></svg></div>
+				<div className="coffee-tip-close" onClick={closeCoffeeTip}><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFF" viewBox="0 0 24 24"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.6L15.6 17 12 13.4 8.4 17 7 15.6l3.6-3.6L7 8.4 8.4 7l3.6 3.6L15.6 7 17 8.4 13.4 12l3.6 3.6z"/><path fill="none" d="M0 0h24v24H0z"/></svg></div>
 				{randomCoffeeTip}
 			</div>
     );
   }
 }
+
