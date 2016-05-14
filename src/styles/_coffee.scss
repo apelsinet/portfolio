@@ -1,16 +1,18 @@
 .coffee-tip {
-	background: $red;
+	position: fixed;
+	top: 20vh;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+	background: $blue;
 	font-size: $font-size-small;
 	text-align: center;
 	padding: 0.5em;
 	margin: 0 auto;
-	border: 1px solid $red;
 	border-radius: 0.5em;
 	max-width: $screen-xs-min;
-	&>svg {
-		fill: #FFF;
-		width: 5em;
-	}
+	box-shadow: 0 0 0.5em;
+	
 	p {
 		font-family: $font-family-heading;
 		color: #FFF;
@@ -29,6 +31,10 @@
 				fill: #333;
 			}
 		}
+	}
+	.coffee-tip-icon {
+		fill: #FFF;
+		width: 5em;
 	}
 }
 
