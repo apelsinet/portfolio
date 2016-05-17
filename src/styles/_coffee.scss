@@ -6,7 +6,6 @@
 	z-index: 2;
 	background: $blue;
 	font-size: $font-size-small;
-	text-align: center;
 	padding: 0.5em;
 	margin: 0 auto;
 	border-radius: 0.5em;
@@ -16,6 +15,7 @@
 	p {
 		font-family: $font-family-heading;
 		color: #FFF;
+		margin: 0;
 	}
 	.coffee-tip-close {
 		width: 2em;
@@ -35,6 +35,8 @@
 	.coffee-tip-icon {
 		fill: #FFF;
 		width: 5em;
+		display: block;
+		float: left;
 	}
 }
 
