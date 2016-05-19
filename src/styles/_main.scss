@@ -18,7 +18,7 @@ main {
 		margin: 1em 0 0.2em 0;
 	}
 	h1 {
-		font-size: $font-size-4x;
+		font-size: $font-size-3x;
 		position: relative;
 		left: -0.08em; // align heading with paragraph
 	}
@@ -26,10 +26,6 @@ main {
 		position: relative;
 		font-size: $font-size-2x;
 		left: -0.05em;
-		@media (min-width: $screen-sm-min) {
-			font-size: $font-size-3x;
-			left: -0.07em;
-		}
 	}
 	h3 {
 		font-size: $font-size-base;
