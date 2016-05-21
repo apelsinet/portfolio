@@ -13,36 +13,43 @@ main {
 	overflow: auto;
 
 	/* Typography */
-	h1, h2, h3, h4 {
-		font-family: $font-family-heading;
-		margin: 1em 0 0.2em 0;
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $heading-font;
+		color: $heading-gray-tint;
+		margin-top: 1em;
 	}
+
 	h1 {
-		font-size: $font-size-3x;
+		font-size: 2.25rem;
 		position: relative;
 		left: -0.08em; // align heading with paragraph
 	}
 	h2 {
+		font-size: 1.75rem;
 		position: relative;
-		font-size: $font-size-2x;
 		left: -0.05em;
 	}
 	h3 {
-		font-size: $font-size-base;
-		text-transform: uppercase;
+		font-size: 1.5rem;
 		position: relative;
 		left: -0.03em;
 	}
 	h4 {
-		font-size: $font-size-small;
-		text-transform: uppercase;
+		font-size: 1.25rem;
+	}
+	h5 {
+		font-size: 1rem;
+	}
+	h6 {
+		font-size: 0.875rem;
 	}
 
-	p, li {
-		color: #333;
-		font-size: $font-size-base;
-		line-height: 1.3em;
-		margin: 0 0 $font-size-2x 0;
+	p, ul, blockquote, figcaption, input, textarea {
+		font-family: $copy-font;
+		color: $copy-gray-tint;
+		font-size: 1rem;
+		line-height: 1.25rem;
+		margin-bottom: 1rem;
 	}
 
 	ul {
@@ -56,14 +63,13 @@ main {
 	}
 
 	blockquote {
-		margin: $font-size-2x;
+		margin: 2em;
 		font-style: italic;
-		color: #222;
 	}
 	cite {
 		font-weight: 700;
 		font-style: normal;
-		color: #222;
+		color: $heading-gray-tint;
 		text-align: right;
 		margin-top: 1em;
 		display: block;
@@ -72,12 +78,12 @@ main {
 	a {
 		color: $red;
 		text-decoration: underline;
-		text-decoration-skip: ink;
 	}
 	a:visited {
 		color: shade($red, 20);
 	}
 	a:hover {
+		text-decoration: none;
 	}
 	a:active {
 		background: $red;
@@ -85,17 +91,9 @@ main {
 		text-decoration: none;
 	}
 
-	p, li, blockquote, cite, figcaption {
-		font-family: $font-family-base;
-	}
 
 	pre {
-		font-size: $font-size-base; // Make border-radius size align with rest of site.
-		line-height: $font-size-small; // Adjust line-height accordingly.
-		margin-bottom: $font-size-2x;
-	}
-	code {
-		font-size: $font-size-small;
+		font-size: 0.875rem;
 	}
 
 	h1, h2, h3, h4, p, li, blockquote, cite, figcaption, a, a:visited, code, span, img, object, input, textarea {
@@ -106,23 +104,18 @@ main {
 	}
 
 	section {
-		padding: 0 $font-size-2x 0 $font-size-2x;
+		padding: 0 2rem 0 2rem;
 		margin: 0 auto;
-		max-width: 30em; // As close to 66 characters per line as possible.
-		&:first-child {
-			h1, h2, h3 {
-				margin-top: 0.5em;
-			}
-		}
+		max-width: 30rem; // As close to 66 characters per line as possible.
 		&:last-child {
-			margin-bottom: $font-size-4x;
+			margin-bottom: 4em;
 		}
 	}
 
 	.svg-computer, .svg-about, .svg-contact, .svg-blog {
-		width: 10em;
+		width: 10rem;
 		display: block;
-		margin: $font-size-2x auto;
+		margin: 2rem auto;
 		transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
 		cursor: pointer;
 		&:hover {
@@ -138,19 +131,18 @@ main {
 			margin: 0.5em 0 1em 1em;
 		}
 		img {
-			font-size: $font-size-small; // make border-radius same size as code border-radius
+			//font-size: $font-size-small; // make border-radius same size as code border-radius
 			max-width: 100%;
 			display: block;
 			margin: 0 auto;
 			border-radius: 0.5em;
 		}
 		figcaption {
-			color: #333;
 			text-align: center;
 			font-style: italic;
 			margin-top: 0.5em;
 			@media (min-width: $screen-sm-min) {
-				font-size: $font-size-small;
+				font-size: 0.825rem;
 			}
 		}
 	}

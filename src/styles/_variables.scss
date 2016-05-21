@@ -10,20 +10,18 @@ $red:                   #C02942;
 $purple:                #542437;
 $blue:                  #53777A;
 
+$copy-gray:							#333333;
+$copy-gray-tint:				#403234; // http://meyerweb.com/eric/tools/color-blend/#333333:C02942:10:hex
+$heading-gray:					#222222;
+$heading-gray-tint:			#302325; // http://meyerweb.com/eric/tools/color-blend/#222222:C02942:10:hex
+
 /*
  * Typography
  * ========================================================================== */
 
-$font-family-base:      'Neuton', serif;
-$font-family-heading:   'Montserrat', sans-serif;
-$font-family-code:      'Roboto Mono', monospace;
-
-$font-size-tiny:        0.382em;
-$font-size-small:       0.618em;
-$font-size-base:        1em;
-$font-size-2x:          1.618em;
-$font-size-3x:          2.618em;
-$font-size-4x:          4.236em;
+$copy-font:      				'Neuton', serif;
+$heading-font:   				'Montserrat', sans-serif;
+$code-font:      				'Roboto Mono', monospace;
 
 
 /*

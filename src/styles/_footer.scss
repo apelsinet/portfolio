@@ -1,6 +1,6 @@
 footer {
   background: $red;
-  height: $font-size-4x;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,8 +14,8 @@ footer {
     margin-left: 0.5em;
     margin-right: 0.5em;
     cursor: pointer;
-    width: $font-size-2x;
-    height: $font-size-2x;
+    width: 2em;
+    height: 2em;
 
     transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
     &:hover {

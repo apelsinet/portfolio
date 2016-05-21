@@ -4,8 +4,6 @@ form {
   margin: 1em auto;
 
   input, textarea {
-    font-family: $font-family-base;
-    font-size: $font-size-base;
     color: #222;
     border: 0;
     outline: 0;
@@ -32,7 +30,7 @@ form {
     color: white;
     background: $blue;
     cursor: pointer;
-    font-family: $font-family-heading;
+    font-family: $heading-font;
 
     &:hover {
       box-shadow: 0 1px 1px 1px rgba(#aaa, 0.6);
@@ -41,7 +39,7 @@ form {
   }
 
   textarea {
-    height: 11.5em;
+    height: 11.8rem;
   }
 }
 

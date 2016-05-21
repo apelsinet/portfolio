@@ -5,26 +5,29 @@
 	transform: translateX(-50%);
 	z-index: 2;
 	background: $blue;
-	font-size: $font-size-small;
-	padding: 0.5em;
+	padding: 1em;
 	margin: 0 auto;
-	border-radius: 0.5em;
+	border-radius: 0.5rem;
+	min-width: 20rem;
 	max-width: $screen-xs-min;
-	box-shadow: 0 0 0.5em;
-	
+	max-height: 70vh;
+	overflow-y: auto;
+	box-shadow: 0 0 2em rgba(0,0,0,0.5);
+
 	p {
-		font-family: $font-family-heading;
+		font-size: 0.875rem;
+		font-family: $heading-font;
 		color: #FFF;
 		margin: 0;
 	}
 	.coffee-tip-close {
-		width: 2em;
-		height: 2em;
+		width: 2rem;
+		height: 2rem;
 		position: relative;
 		float: right;
 		&>svg {
-			width: 2em;
-			height: 2em;
+			width: 2rem;
+			height: 2rem;
 			fill: #FFF;
 			cursor: pointer;
 			&:hover {
@@ -34,9 +37,10 @@
 	}
 	.coffee-tip-icon {
 		fill: #FFF;
-		width: 5em;
+		width: 7.5rem;
 		display: block;
-		float: left;
+		margin: 0 auto;
+		padding-left: 2rem;
 	}
 }
 

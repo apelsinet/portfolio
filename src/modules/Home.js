@@ -47,25 +47,25 @@ export default class Home extends React.Component {
 			<pre><code className="language-css">{`body { color: blue !important; }`}</code></pre>
 			<p>Add a touch of html.</p>
 			<pre><code className="language-markup">{`<html>
-				<head>
-				<title></title>
-				<link rel='stylesheet' href='somedomain.com/style.css'/>
-				</head>
-				</html>`}</code></pre>
+	<head>
+		<title></title>
+		<link rel='stylesheet' href='somedomain.com/style.css'/>
+	</head>
+</html>`}</code></pre>
 				<p>Here comes the javascript</p>
 				<pre><code className="language-javascript">{`var React = require('react');
-					var Markdown = require('react-markdown');
+var Markdown = require('react-markdown');
 
-					React.render(
-						<Markdown source="# Your markdown here" />,
-						document.getElementById('content')
-					);`}</code></pre>
+React.render(
+	<Markdown source="# Your markdown here" />,
+	document.getElementById('content')
+);`}</code></pre>
 					<p>Finally, onwards with some c++</p>
 					<pre><code className="language-cpp">{`#include <iostream>
-						int main() {
-							std::cout << "Hellow World!";
-								//commented text goes here
-						}`}</code></pre>
+int main() {
+	std::cout << "Hellow World!";
+	//commented text goes here
+}`}</code></pre>
 
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						<blockquote>
