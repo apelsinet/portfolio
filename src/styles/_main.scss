@@ -17,6 +17,7 @@ main {
 		font-family: $heading-font;
 		color: $heading-gray-tint;
 		margin-top: 1em;
+		margin-bottom: 0.5em;
 	}
 
 	h1 {
@@ -93,7 +94,7 @@ main {
 
 
 	pre {
-		font-size: 0.875rem;
+		font-size: 0.75rem;
 	}
 
 	h1, h2, h3, h4, p, li, blockquote, cite, figcaption, a, a:visited, code, span, img, object, input, textarea {
@@ -134,7 +135,6 @@ main {
 			margin: 0.5em 0 1em 1em;
 		}
 		img {
-			//font-size: $font-size-small; // make border-radius same size as code border-radius
 			max-width: 100%;
 			display: block;
 			margin: 0 auto;

@@ -5,12 +5,13 @@
 // Base
 html {
 	overflow-y: scroll;
+	overflow-x: hidden;
   font-size: 16px;
   @media (min-width: $screen-sm-min) {
     font-size: 24px;
   }
   @media (min-width: $screen-lg-min) {
-    font-size: 36px;
+    font-size: 28px;
   }
   font-weight: 400;
 }

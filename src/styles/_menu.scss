@@ -1,6 +1,7 @@
 .menu {
 	background: $red;
 	height: 3em;
+	box-shadow: 0 -1em 0.5em -1em #222 inset;
 
 	ul {
 		height: inherit;
