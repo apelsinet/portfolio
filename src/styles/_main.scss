@@ -150,7 +150,25 @@ main {
 		}
 	}
 
-	.publication-date {
-		font-style: italic;
+	.blog-snippet {
+		a {
+			color: $copy-gray-tint;
+			text-decoration: none;
+		}
+		i {
+			font-style: italic;
+		}
+		.blog-tag {
+			background: $red;
+			color: white;
+			border-radius: 0.2em;
+			margin-left: 0.5em;
+			padding: 0 0.2em;
+			cursor: pointer;
+			&:hover {
+				box-shadow: 0 1px 1px 1px rgba(#aaa, 0.6);
+				background: shade($red, 10);
+			}
+		}
 	}
 }
