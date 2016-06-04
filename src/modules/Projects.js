@@ -28,31 +28,11 @@ export default class Blog extends React.Component {
 					: ''
 			}
 			</section>
-			<section className="blog-snippet">
-				<a href="">
-					<h2>Third blog post</h2>
-					<p><i>2016-04-28</i><span className="blog-tag">Latin</span><span className="blog-tag">Jibberish</span></p>
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					<p><i>Read more&hellip;</i></p>
-				</a>
+			<section>
+					<h2>Dummy project</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p><a href="">Read more&hellip;</a></p>
 			</section>
-			<section className="blog-snippet">
-				<a href="">
-					<h2>Second blog post</h2>
-					<p><i>2016-04-26</i><span className="blog-tag">Latin</span><span className="blog-tag">Jibberish</span></p>
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					<p><i>Read more&hellip;</i></p>
-				</a>
-			</section>
-			<section className="blog-snippet">
-				<a href="">
-					<h2>First blog post</h2>
-					<p><i>2016-04-25</i><span className="blog-tag">Latin</span><span className="blog-tag">Jibberish</span></p>
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					<p><i>Read more&hellip;</i></p>
-				</a>
-			</section>
-			
 			</div>
 		);
 	}

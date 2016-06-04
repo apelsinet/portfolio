@@ -4,7 +4,7 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import App from './components/App';
 import Home from './modules/Home';
 import About from './modules/About';
-import Blog from './modules/Blog';
+import Projects from './modules/Projects';
 import Contact from './modules/Contact';
 import './styles/styles.scss';
 
@@ -14,7 +14,7 @@ render(
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
       <Route path="/about" component={About}/>
-      <Route path="/blog" component={Blog}/>
+      <Route path="/projects" component={Projects}/>
       <Route path="/contact" component={Contact}/>
     </Route>
   </Router>

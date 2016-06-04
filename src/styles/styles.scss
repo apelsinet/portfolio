@@ -5,24 +5,23 @@
 // Base
 html {
 	overflow-y: scroll;
-  font-size: 16px;
-  @media (min-width: $screen-sm-min) {
-    font-size: 24px;
-  }
-  @media (min-width: $screen-lg-min) {
-    font-size: 28px;
-  }
-  font-weight: 400;
+	font-size: 16px;
+	@media (min-width: $screen-sm-min) {
+		font-size: 24px;
+	}
+	@media (min-width: $screen-lg-min) {
+		font-size: 28px;
+	}
+	font-weight: 400;
 }
 html, body {
-  overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 
 @import 'header';
 @import 'menu';
 @import 'main';
-@import 'prism';
 @import 'contact-form';
 @import 'coffee';
 @import 'footer';
