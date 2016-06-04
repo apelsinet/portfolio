@@ -1,6 +1,7 @@
 import React from 'react';
 import Contactform from '../components/Contactform';
 import Coffee from '../components/Coffee';
+import { Link } from 'react-router';
 
 export default class Home extends React.Component {
 	constructor(props) {
@@ -27,38 +28,36 @@ export default class Home extends React.Component {
 				? <Coffee closeCoffeeTip={this._closeCoffeeTip.bind(this)} />
 				: ''
 			}
-	<h2>The ever expanding and accelerating web needs focus on performance</h2>
-	<p>Lorem ipsum dolor sit amet, <a href="">consectetur</a> <a href="http://dffgjghjhg.com">adipiscing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<h1>The ever expanding and accelerating web needs focus on performance</h1>
+	<p>Then why build something as simple as a portfolio with a massive framework? I'm going to tell you in a minute, but first I'd like to welcome you to my site and properly introduce myself.</p>
 	<figure>
 	<img src={require('../assets/coffeedrinker_compressed.jpg')} />
 	<figcaption>Sipping on a cup of delicious black gold.</figcaption>
 	</figure>
-	<p>Lorem ipsum dolor sit amet, <a href="">consectetur</a> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	<ul>
-	<li>list item 1.</li>
-	<li>list item 2.</li>
-	<li>list item 3.</li>
-	<li>list item 4.</li>
-	</ul>
+  <p>My name is Mattias Prada and I'm an aspiring web developer from Stockholm, Sweden. I'm also a father, coffee enthusiast, constant learner and a techie. I could keep adding stuff to that list but I value your time. If you&mdash;for some reason don't&mdash;feel free to head over to <Link to="/about">the section about me</Link> to learn more.</p>
+  </section>
+  <section>
+  <h2>Building a portfolio with React.js</h2>
+  <p>When I first jumped onto this bandwagon of sorts, I was hit by <a href="https://www.smashingmagazine.com/2015/04/react-to-the-future-with-isomorphic-apps/" target="_blank">a wall of confusion.</a> Building a React application is nothing like building a simple html and css site. The development process is so much deeper and entangled. But it intrigued me and I really started enjoying it soon enough. Breaking every part of the site down to small components that can be reused, is what finally captured and&mdash;not in a bad way&mdash;chained me down to this library. The same was like Sass did when I first learned about its ability to break down the stylesheet into parts. Add the <a href="https://facebook.github.io/react/docs/reconciliation.html" target="_blank">virtual DOM</a> to the fact that I love fast and well oiled software machinery, and you get a perfect match.</p>
+  <p>I built this portfolio using React to also learn by doing. And while learning, I started adding a heap of things to the bundle. I wanted:</p>
+  <ul>
+  <li>Nice looking svg-animated modal-style menus.</li>
+  <li>An integrated blog that asynchronously fetched blog posts when you hovered their summaries.</li>
+  <li>A syntax highlighting system that highlighted the text right in the client after every component mount or update.</li>
+  </ul>
+  <p>This all resulted in a bundle size of almost a megabyte, and the blog thing got out of hands with complexity so I had to scale down. Luckily for me, the React core is a lightweight one. After iterating on the scaling down and outsourcing the blog thing to <a href="https://medium.com/@MattiasPrada" target="_blank">medium</a>, I landed on a gzipped bundle of ~66kB. This is less than most photos on the web, and the power this bundle gives my application is well deserved those 66kB.</p>
+  <p>So what's in this bundle? Apart from the previously stated React core, I'm also using the React router, to route views on the client side. Vendor-prefixing most of my css code is a thing of the past thanks to the <a href="https://github.com/postcss/autoprefixer" target="_blank">PostCSS autoprefixer</a> that loads into the webpack build of this bundle, along with lots of other convenient little tricks that webpack has to offer. You don't need more than this for a portfolio really, though it took me a while to figure that out, but hey&mdash;at least I learned a few new things on the way! You can follow my thought process through the commit train on the <a href="https://github.com/apelsinet/portfolio/commits/master" target="_blank">github repository</a> for this site.</p>
 	</section>
 	<section>
-	<h2>Heading</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<h2>Moonwalking out the room with style</h2>
+	<p>If you haven't already found the easter egg I planted, I suggest you do. The one and only clue you get is coffee. While still quite on the topic of megabyte sized portfolios but interrupting the train of thought a bit by pondering space&mdash;which happens to me a lot&mdash;I'll leave you with this brilliant quote.</p>
 	<blockquote>
 	“Two things are infinite: the universe and human stupidity; and I am not sure about the universe.”
 	<cite>—Albert Einstein</cite>
 	</blockquote>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</section>
-	<section>
-	<h3>Heading</h3>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	<Contactform />
 	</section>
-	<section>
-	<h4>Heading</h4>
-	<p>Some text...</p>
-	</section>
+
 	</div>
 		);
 }
