@@ -26,7 +26,33 @@ export default class About extends React.Component {
 					? <Coffee closeCoffeeTip={this._closeCoffeeTip.bind(this)} />
 					: ''
 			}
-			<h1>About me</h1>
+			<h2>I'm fascinated by the web</h2>
+      <p>I actually started my developer adventures in the late '90s. My dad printed out this huge stack of pages with a beginner's guide to HTML. I was an amazed ten or eleven year old, and continued learning CSS, some Javascript and PHP over the coming years. I can't really say that my creations were objects of pure beauty though, but these were the days of Geocities and Angelfire after all. During High school, my developer path was unfortunately clouded by an increasing interest in music. I went to Dalarna University to study music production and earned a Bachelor of Arts. My passion for the web never faded though, I just kept it as a hobby. A few years back I decided to learn C++ to get a basic classic programming foundation. I loved it, but started to gravitate to Javascript once I found how much had happened to this language that I used to build alert games with. Fast-forward to this day.</p> 
+      <h2>A sound engineer who works with video</h2>
+      <p>I'm currently employed as a transmission engineer at a TV-station in Stockholm, Sweden. I sit in a room with something like 20x 50" monitors and watch a load of TV. I've been juggeling this with becoming a father to my lovely&mdash;now 1 year old&mdash;son, and learning and learning, and some times committing code when a spare hour is found, but recently went on paternal leave. This is where I am now.</p>
+      <h2>Constantly thinking about stuff</h2>
+      <p>I love to read and watch pop science about space, artificial intelligence, philosophy and just general computer science. When I do have time over I enjoy watching a good movie once in a while. I love Tarantino and Nolan stuff and I'm a big Lord of the Rings fan. Yes, I know the Hobbit movies could have been one single thing but I still very much enjoyed them! I also like TV-shows like Game of Thrones, House of Cards, Hannibal, Gomorrah and True Detective. Sherlock is great too, and Cumberbatch's film about Alan Turing as well now that I come to think of it. Enough about movies now.</p>
+      <h2>Languages and technologies I use</h2>
+      <p>I'm always interested in learning new things, but these are the languages and tools that I currently use:</p>
+      <ul>
+        <li>JavaScript (ES6)</li>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>Sass/SCSS</li>
+        <li>PHP</li>
+        <li>C++</li>
+        <li>Shell script</li>
+        <li>Node.js</li>
+        <li>React.js (learning Redux)</li>
+        <li>Webpack</li>
+        <li>Wordpress</li>
+        <li>Git</li>
+        <li>Ubuntu</li>
+        <li>NGINX</li>
+      </ul>
+      <p>In the future, I'd like to learn things like Python and Machine Learning, as well as more backend tech.</p>
+
+        
 			</section>
 			</div>
 		);

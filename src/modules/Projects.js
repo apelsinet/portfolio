@@ -29,7 +29,7 @@ export default class Blog extends React.Component {
 			}
 			</section>
 			<section>
-					<h2>Tarot reading app</h2>
+					<h2>Tarot reader</h2>
           <figure>
             <img src={require('../assets/tarot-screen.jpg')} />
             <figcaption>Screenshot of the table with a reading of five cards.</figcaption>
@@ -48,7 +48,7 @@ export default class Blog extends React.Component {
           <p><a href="https://github.com/apelsinet/portfolio">Source code on Github.</a></p>
 			</section>
 			<section>
-					<h2>Portfolio</h2>
+					<h2>Pomodoro Timer</h2>
           <figure>
             <img src={require('../assets/pomodoro-screen.png')} />
             <figcaption>Screenshot of the app counting down during its "Work" state.</figcaption>
