@@ -29,9 +29,33 @@ export default class Blog extends React.Component {
 			}
 			</section>
 			<section>
-					<h2>Dummy project</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-					<p><a href="">Read more&hellip;</a></p>
+					<h2>Tarot reading app</h2>
+          <figure>
+            <img src={require('../assets/tarot-screen.jpg')} />
+            <figcaption>Screenshot of the table with a reading of five cards.</figcaption>
+          </figure>
+          <h4>Closed source, currently in closed beta</h4>
+          <p>Web application written in plain Javascript and jQuery, HTML and SCSS. The application is designed mobile and performance first, and a great deal of focus has been laid on shrinking the size of the initial load. You can access the full deck of cards with their corresponding readings from a hidden side navigation. Images and texts are injected via Ajax calls that fires when you open up a specific card. The reading texts, which are in Swedish, are written by my girlfriend Linn. A link to the closed beta is available on demand.</p>
+			</section>
+			<section>
+					<h2>Portfolio</h2>
+          <figure>
+            <img src={require('../assets/portfolio-screen.png')} />
+            <figcaption>Screenshot of the home page of this portfolio with the easter egg activated.</figcaption>
+          </figure>
+          <h4>Open source, currently in production</h4>
+          <p>Web application written in ES6 using React, React-router, Babel and Webpack. As hinted at the front page I wrote this application to learn about React.js. I got a healthy dose of learning about Node.js and NPM as well in the process. I restricted the SCSS styling to only account for stuff being used on the page. The design is fully responsive and 100% custom built.</p>
+          <p><a href="https://github.com/apelsinet/portfolio">Source code on Github.</a></p>
+			</section>
+			<section>
+					<h2>Portfolio</h2>
+          <figure>
+            <img src={require('../assets/pomodoro-screen.png')} />
+            <figcaption>Screenshot of the app counting down during its "Work" state.</figcaption>
+          </figure>
+          <h4>Open source, currently in production</h4>
+          <p>Simple Pomodoro Clock written in plain Javascript. A very useful tool for productivity. It counts down from 25 minutes&mdash;or what ever you set the globals to&mdash;during which you are supposed to work. After the 25 minutes have passed, you are given 5 minutes of rest, and the whole screen turns green.</p>
+          <p><a href="https://github.com/apelsinet/pomodoro-timer">Source code on Github.</a></p>
 			</section>
 			</div>
 		);
