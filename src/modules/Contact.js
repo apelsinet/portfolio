@@ -1,4 +1,5 @@
 import React, {PropTypes} from 'react';
+import Contactform from '../components/Contactform';
 import Coffee from '../components/Coffee';
 
 export default class Contact extends React.Component {
@@ -28,7 +29,7 @@ export default class Contact extends React.Component {
 					? <Coffee closeCoffeeTip={this._closeCoffeeTip.bind(this)} />
 					: ''
 			}
-			<h1>Contact me</h1>
+      <Contactform />
 			</section>
 			</div>
 		);
