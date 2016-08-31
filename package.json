@@ -1,6 +1,6 @@
 {
   "name": "apelsinet-portfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Portfolio of Mattias Prada. Built on top of react-slingshot.",
   "repository": {
     "type": "git",
