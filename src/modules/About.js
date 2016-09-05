@@ -51,6 +51,8 @@ export default class About extends React.Component {
         <li>NGINX</li>
       </ul>
       <p>In the future, I'd like to learn things like Python and Machine Learning, as well as more backend tech.</p>
+      <h2>Resume</h2>
+      <p>You can read my resume <a href="http://apelsi.net/resume">over here</a> or&mdash;if you rather prefer&mdash;you can <a href="http://apelsi.net/resume/mattias_prada_resume.pdf">download it as PDF.</a></p>
 
         
 			</section>
