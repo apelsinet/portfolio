@@ -4,27 +4,27 @@ import Aeropress from './coffeetips/Aeropress';
 import Espresso from './coffeetips/Espresso';
 import Grinder from './coffeetips/Grinder';
 
-let randomValue = 0;
 let randomCoffeeTip;
-function getRandomValue(min, max) {
+const getRandomValue = (min, max) => {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+};
 
 export default class Coffee extends React.Component {
 	componentWillMount() {
-		randomValue = getRandomValue(1, 4);
-		if (randomValue === 1) {
-			randomCoffeeTip = <Chemex />;
-		}
-		else if (randomValue === 2) {
-			randomCoffeeTip = <Aeropress />;
-		}
-		else if (randomValue === 3) {
-			randomCoffeeTip = <Espresso />;
-		}
-		else if (randomValue === 4) {
-			randomCoffeeTip = <Grinder />;
-		}
+    switch (getRandomValue(1, 4)) {
+      case 1:
+        randomCoffeeTip = <Chemex />;
+        break;
+      case 2:
+        randomCoffeeTip = <Aeropress />;
+        break;
+      case 3:
+        randomCoffeeTip = <Espresso />;
+        break;
+      case 4:
+        randomCoffeeTip = <Grinder />;
+        break;
+    }
 	}
   render() {
 		const { closeCoffeeTip } = this.props;
