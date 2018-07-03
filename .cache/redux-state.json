@@ -1,13 +1,23 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
+      "layout": "index",
+      "jsonName": "dev-404-page.json",
+      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
+      "component": "/Users/apelsinet/h/portfolio/.cache/dev-404-page.js",
+      "componentChunkName": "component---cache-dev-404-page-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "pluginCreatorId": "Plugin dev-404-page",
+      "componentPath": "/Users/apelsinet/h/portfolio/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "contentDigest": "7cc5979a26c96f8028329fc257cf62fd",
+        "description": "Plugin dev-404-page",
         "owner": "internal-data-bridge"
       }
     },
@@ -42,6 +52,45 @@
       "children": [],
       "internal": {
         "contentDigest": "c059f6394813fa6962a6e75b6dfcd5b7",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin component-page-creator": {
+      "resolve": "/Users/apelsinet/h/portfolio/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "id": "Plugin component-page-creator",
+      "name": "component-page-creator",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/apelsinet/h/portfolio/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "packageJson": {
+        "name": "component-page-creator",
+        "description": "An internal Gatsby plugin that creates pages from component files in src/pages",
+        "version": "1.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "7dafc4090080e999eda6ca3cc7316ccd",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -196,7 +245,7 @@
       "resolve": "/Users/apelsinet/h/portfolio/node_modules/gatsby-plugin-react-helmet",
       "id": "Plugin gatsby-plugin-react-helmet",
       "name": "gatsby-plugin-react-helmet",
-      "version": "2.0.11",
+      "version": "2.0.10",
       "pluginOptions": {
         "plugins": []
       },
@@ -209,7 +258,7 @@
       "packageJson": {
         "name": "gatsby-plugin-react-helmet",
         "description": "Manage document head data with react-helmet. Provides drop-in server rendering support for Gatsby.",
-        "version": "2.0.11",
+        "version": "2.0.10",
         "main": "index.js",
         "keywords": [
           "gatsby",
@@ -227,7 +276,10 @@
           "noscript",
           "style"
         ],
-        "author": "Kyle Mathews <matthews.kyle@gmail.com>",
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "matthews.kyle@gmail.com"
+        },
         "license": "MIT",
         "dependencies": [
           {
@@ -261,7 +313,56 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "bf29c83512a8cc6412da967b8f1ac349",
+        "contentDigest": "33fcccf902ba01821c8c5550f23a03b3",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-google-fonts": {
+      "resolve": "/Users/apelsinet/h/portfolio/node_modules/gatsby-plugin-google-fonts",
+      "id": "Plugin gatsby-plugin-google-fonts",
+      "name": "gatsby-plugin-google-fonts",
+      "version": "0.0.4",
+      "pluginOptions": {
+        "plugins": [],
+        "fonts": [
+          "Open Sans",
+          "Markazi Text"
+        ]
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/apelsinet/h/portfolio/node_modules/gatsby-plugin-google-fonts",
+      "packageJson": {
+        "name": "gatsby-plugin-google-fonts",
+        "description": "Bring Google Fonts to Gatsby",
+        "version": "0.0.4",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gastby-plugin",
+          "react",
+          "google",
+          "fonts"
+        ],
+        "author": {
+          "name": "Didier Franc",
+          "email": "dev@didierfranc.com"
+        },
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "e84ebeb6407a9f1996e75a4f41bfbd93",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -270,7 +371,7 @@
       "resolve": "/Users/apelsinet/h/portfolio",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "a77c4ad8ddfd7c099694aea8fa852ba5",
+      "version": "041c4132e92621997be2dd3d9a43dd49",
       "pluginOptions": {
         "plugins": []
       },
@@ -297,6 +398,10 @@
             "version": "^1.6.40"
           },
           {
+            "name": "gatsby-plugin-google-fonts",
+            "version": "0.0.4"
+          },
+          {
             "name": "gatsby-plugin-react-helmet",
             "version": "^2.0.10"
           },
@@ -318,86 +423,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "c611098fd717a6dc1f83320dbe14f618",
-        "type": "SitePlugin",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "Plugin gatsby-plugin-page-creator": {
-      "resolve": "/Users/apelsinet/h/portfolio/node_modules/gatsby-plugin-page-creator",
-      "id": "Plugin gatsby-plugin-page-creator",
-      "name": "gatsby-plugin-page-creator",
-      "version": "1.0.1",
-      "pluginOptions": {
-        "plugins": [],
-        "path": "/Users/apelsinet/h/portfolio/src/pages",
-        "pathCheck": false
-      },
-      "nodeAPIs": [
-        "createPagesStatefully"
-      ],
-      "browserAPIs": [],
-      "ssrAPIs": [],
-      "pluginFilepath": "/Users/apelsinet/h/portfolio/node_modules/gatsby-plugin-page-creator",
-      "packageJson": {
-        "name": "gatsby-plugin-page-creator",
-        "description": "Gatsby plugin that automatically creates pages from React components in specified directories",
-        "version": "1.0.1",
-        "main": "index.js",
-        "keywords": [
-          "gatsby",
-          "gatsby-plugin"
-        ],
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-        "license": "MIT",
-        "dependencies": [
-          {
-            "name": "babel-runtime",
-            "version": "^6.26.0"
-          },
-          {
-            "name": "bluebird",
-            "version": "^3.5.0"
-          },
-          {
-            "name": "chokidar",
-            "version": "^1.7.0"
-          },
-          {
-            "name": "glob",
-            "version": "^7.1.1"
-          },
-          {
-            "name": "lodash",
-            "version": "^4.17.4"
-          },
-          {
-            "name": "parse-filepath",
-            "version": "^1.0.1"
-          },
-          {
-            "name": "slash",
-            "version": "^1.0.0"
-          }
-        ],
-        "devDependencies": [
-          {
-            "name": "babel-cli",
-            "version": "^6.26.0"
-          },
-          {
-            "name": "cross-env",
-            "version": "^5.0.5"
-          }
-        ],
-        "peerDependencies": [],
-        "optionalDependecies": [],
-        "bundledDependecies": []
-      },
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "contentDigest": "b0a78ba1edb76eeb9f3da2d4047b2f55",
+        "contentDigest": "475ad80b15aa778b041a891c3004b1bd",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -406,14 +432,16 @@
       "siteMetadata": {
         "title": "Gatsby Default Starter"
       },
+      "port": "8000",
+      "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-07-01T11:32:31.527Z",
+      "buildTime": "2018-07-03T21:39:50.686Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "84aa9d321341e31b33c18e1433b99aa3",
+        "contentDigest": "2d84d8dbb723fefc555da4ec1592aa15",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -426,16 +454,16 @@
       "component": "/Users/apelsinet/h/portfolio/src/pages/404.js",
       "componentChunkName": "component---src-pages-404-js",
       "context": {},
-      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
-      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/apelsinet/h/portfolio/src/pages/404.js",
       "id": "SitePage /404/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1230f3b13ee0d2016ced0fd2ea9526a5",
-        "description": "Plugin gatsby-plugin-page-creator",
+        "contentDigest": "1777574be201117fb89a92454617ece0",
+        "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
     },
@@ -447,16 +475,16 @@
       "component": "/Users/apelsinet/h/portfolio/src/pages/index.js",
       "componentChunkName": "component---src-pages-index-js",
       "context": {},
-      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
-      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/apelsinet/h/portfolio/src/pages/index.js",
       "id": "SitePage /",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "73964d7c705730c0500b2c8097861200",
-        "description": "Plugin gatsby-plugin-page-creator",
+        "contentDigest": "ef079820e4050455473e366a86e4479f",
+        "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
     },
@@ -468,16 +496,16 @@
       "component": "/Users/apelsinet/h/portfolio/src/pages/Orange.js",
       "componentChunkName": "component---src-pages-orange-js",
       "context": {},
-      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
-      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/apelsinet/h/portfolio/src/pages/Orange.js",
       "id": "SitePage /Orange/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "22bfcedef662e9bf32cdd05cc024c359",
-        "description": "Plugin gatsby-plugin-page-creator",
+        "contentDigest": "ab9e675223a0f3ab56e944ebdadddaf9",
+        "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
     },
@@ -489,16 +517,16 @@
       "component": "/Users/apelsinet/h/portfolio/src/pages/page-2.js",
       "componentChunkName": "component---src-pages-page-2-js",
       "context": {},
-      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
-      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/apelsinet/h/portfolio/src/pages/page-2.js",
       "id": "SitePage /page-2/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "7e049f2b260f083ba4b32a177c8ce271",
-        "description": "Plugin gatsby-plugin-page-creator",
+        "contentDigest": "adc5fea9b0bedd5351de9741e5c355a4",
+        "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
     },
@@ -518,7 +546,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "8131c60ed2408914972e2578e2e85e0b",
+        "contentDigest": "aa5671506891aae9fa164cec0d87e9e7",
         "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
       }
@@ -526,7 +554,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "f6d5cf7372f3e6278a4ee334dfd113c2"
+    "PLUGINS_HASH": "4a5103f891d7e7e1cdcf8affc87a6171"
   },
   "componentDataDependencies": {
     "nodes": {
