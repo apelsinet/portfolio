@@ -1,23 +1,13 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
-      "layout": "index",
-      "jsonName": "dev-404-page.json",
-      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
-      "component": "/Users/apelsinet/h/portfolio/.cache/dev-404-page.js",
-      "componentChunkName": "component---cache-dev-404-page-js",
-      "context": {},
-      "pluginCreator___NODE": "Plugin dev-404-page",
-      "pluginCreatorId": "Plugin dev-404-page",
-      "componentPath": "/Users/apelsinet/h/portfolio/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "7cc5979a26c96f8028329fc257cf62fd",
-        "description": "Plugin dev-404-page",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
         "owner": "internal-data-bridge"
       }
     },
@@ -371,7 +361,7 @@
       "resolve": "/Users/apelsinet/h/portfolio",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "041c4132e92621997be2dd3d9a43dd49",
+      "version": "27db731b798a6acf2fe7fe2d96211d17",
       "pluginOptions": {
         "plugins": []
       },
@@ -423,25 +413,23 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "475ad80b15aa778b041a891c3004b1bd",
+        "contentDigest": "c744de15ef5666107be621ade6e6399c",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
     "Site": {
       "siteMetadata": {
-        "title": "Gatsby Default Starter"
+        "title": "apelsi.net"
       },
-      "port": "8000",
-      "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-07-03T21:39:50.686Z",
+      "buildTime": "2018-07-03T22:07:38.550Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "2d84d8dbb723fefc555da4ec1592aa15",
+        "contentDigest": "5c77be3a9445d69dd17da4a6fffa3d17",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -462,7 +450,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1777574be201117fb89a92454617ece0",
+        "contentDigest": "111fd48f384bd3e0ae3efcc8edf57c5b",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -483,7 +471,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "ef079820e4050455473e366a86e4479f",
+        "contentDigest": "8733d667d8db30eb96fd590fe98bf920",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -504,7 +492,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "ab9e675223a0f3ab56e944ebdadddaf9",
+        "contentDigest": "fd7788ee3de4986c05a2f02dd724af55",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -525,7 +513,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "adc5fea9b0bedd5351de9741e5c355a4",
+        "contentDigest": "a00230ca37d2f54ca249be6bfac48e9d",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -546,7 +534,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "aa5671506891aae9fa164cec0d87e9e7",
+        "contentDigest": "fe732a3f7991db7015ef86aff68d0fd0",
         "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
       }
@@ -554,7 +542,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "4a5103f891d7e7e1cdcf8affc87a6171"
+    "PLUGINS_HASH": "91051c4fd7f68dfab3712f2c33722c69"
   },
   "componentDataDependencies": {
     "nodes": {
@@ -562,10 +550,6 @@
         "LAYOUT___index"
       ]
     },
-    "connections": {
-      "SitePage": [
-        "/dev-404-page/"
-      ]
-    }
+    "connections": {}
   }
 }
