@@ -20,6 +20,7 @@ const Layout = ({ children, data }) => (
             meta={[
                 { name: 'description', content: 'Portfolio of Mattias Prada' },
                 { name: 'keywords', content: 'mattias prada, mattias, prada, full stack developer, portfolio' },
+                { name: 'google-site-verification', content: 'wmG8XkUWPbLucXGWpHwSpH6RsTwGXX3SAPyHl_cxrCg' },
             ]}
         />
         <div
