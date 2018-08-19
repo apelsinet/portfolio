@@ -46,45 +46,6 @@
         "owner": "internal-data-bridge"
       }
     },
-    "Plugin component-page-creator": {
-      "resolve": "/Users/apelsinet/h/portfolio/node_modules/gatsby/dist/internal-plugins/component-page-creator",
-      "id": "Plugin component-page-creator",
-      "name": "component-page-creator",
-      "version": "1.0.0",
-      "pluginOptions": {
-        "plugins": []
-      },
-      "nodeAPIs": [
-        "createPagesStatefully"
-      ],
-      "browserAPIs": [],
-      "ssrAPIs": [],
-      "pluginFilepath": "/Users/apelsinet/h/portfolio/node_modules/gatsby/dist/internal-plugins/component-page-creator",
-      "packageJson": {
-        "name": "component-page-creator",
-        "description": "An internal Gatsby plugin that creates pages from component files in src/pages",
-        "version": "1.0.0",
-        "main": "index.js",
-        "keywords": [
-          "gatsby",
-          "gatsby-plugin"
-        ],
-        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-        "license": "MIT",
-        "dependencies": [],
-        "devDependencies": [],
-        "peerDependencies": [],
-        "optionalDependecies": [],
-        "bundledDependecies": []
-      },
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "contentDigest": "7dafc4090080e999eda6ca3cc7316ccd",
-        "type": "SitePlugin",
-        "owner": "internal-data-bridge"
-      }
-    },
     "Plugin component-layout-creator": {
       "resolve": "/Users/apelsinet/h/portfolio/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
       "id": "Plugin component-layout-creator",
@@ -235,7 +196,7 @@
       "resolve": "/Users/apelsinet/h/portfolio/node_modules/gatsby-plugin-react-helmet",
       "id": "Plugin gatsby-plugin-react-helmet",
       "name": "gatsby-plugin-react-helmet",
-      "version": "2.0.10",
+      "version": "2.0.11",
       "pluginOptions": {
         "plugins": []
       },
@@ -248,7 +209,7 @@
       "packageJson": {
         "name": "gatsby-plugin-react-helmet",
         "description": "Manage document head data with react-helmet. Provides drop-in server rendering support for Gatsby.",
-        "version": "2.0.10",
+        "version": "2.0.11",
         "main": "index.js",
         "keywords": [
           "gatsby",
@@ -303,7 +264,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "33fcccf902ba01821c8c5550f23a03b3",
+        "contentDigest": "bf29c83512a8cc6412da967b8f1ac349",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -381,11 +342,11 @@
         "dependencies": [
           {
             "name": "gatsby",
-            "version": "^1.9.247"
+            "version": "^1.9.277"
           },
           {
             "name": "gatsby-link",
-            "version": "^1.6.40"
+            "version": "^1.6.46"
           },
           {
             "name": "gatsby-plugin-google-fonts",
@@ -393,7 +354,7 @@
           },
           {
             "name": "gatsby-plugin-react-helmet",
-            "version": "^2.0.10"
+            "version": "^2.0.11"
           },
           {
             "name": "react-helmet",
@@ -403,7 +364,7 @@
         "devDependencies": [
           {
             "name": "prettier",
-            "version": "^1.12.0"
+            "version": "^1.14.2"
           }
         ],
         "peerDependencies": [],
@@ -418,18 +379,100 @@
         "owner": "internal-data-bridge"
       }
     },
+    "Plugin gatsby-plugin-page-creator": {
+      "resolve": "/Users/apelsinet/h/portfolio/node_modules/gatsby-plugin-page-creator",
+      "id": "Plugin gatsby-plugin-page-creator",
+      "name": "gatsby-plugin-page-creator",
+      "version": "1.0.1",
+      "pluginOptions": {
+        "plugins": [],
+        "path": "/Users/apelsinet/h/portfolio/src/pages",
+        "pathCheck": false
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/apelsinet/h/portfolio/node_modules/gatsby-plugin-page-creator",
+      "packageJson": {
+        "name": "gatsby-plugin-page-creator",
+        "description": "Gatsby plugin that automatically creates pages from React components in specified directories",
+        "version": "1.0.1",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "glob",
+            "version": "^7.1.1"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "parse-filepath",
+            "version": "^1.0.1"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "b0a78ba1edb76eeb9f3da2d4047b2f55",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "Site": {
       "siteMetadata": {
         "title": "apelsi.net"
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-08-19T11:15:38.212Z",
+      "buildTime": "2018-08-19T11:37:48.615Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "9d9586711af9141493d60e19a5ead9c5",
+        "contentDigest": "51c036df7206ae5c439bcf08c4a2c990",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -442,16 +485,16 @@
       "component": "/Users/apelsinet/h/portfolio/src/pages/404.js",
       "componentChunkName": "component---src-pages-404-js",
       "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
       "componentPath": "/Users/apelsinet/h/portfolio/src/pages/404.js",
       "id": "SitePage /404/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1ebe1274e8c1115c1f9053503aa79180",
-        "description": "Plugin component-page-creator",
+        "contentDigest": "daa064b1a09ea3ce22ff0a34d5fb6ea3",
+        "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
     },
@@ -463,16 +506,16 @@
       "component": "/Users/apelsinet/h/portfolio/src/pages/index.js",
       "componentChunkName": "component---src-pages-index-js",
       "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
       "componentPath": "/Users/apelsinet/h/portfolio/src/pages/index.js",
       "id": "SitePage /",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f491ec65e67b48e35524861700eb75f2",
-        "description": "Plugin component-page-creator",
+        "contentDigest": "41f18c1aae71b9a4a59372e905845468",
+        "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
     },
@@ -484,16 +527,16 @@
       "component": "/Users/apelsinet/h/portfolio/src/pages/Orange.js",
       "componentChunkName": "component---src-pages-orange-js",
       "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
       "componentPath": "/Users/apelsinet/h/portfolio/src/pages/Orange.js",
       "id": "SitePage /Orange/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "672260f6246c9de0aa7269f8801615fd",
-        "description": "Plugin component-page-creator",
+        "contentDigest": "08981e8ef51e7835f0ae2ce981892a21",
+        "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
     },
@@ -505,16 +548,16 @@
       "component": "/Users/apelsinet/h/portfolio/src/pages/page-2.js",
       "componentChunkName": "component---src-pages-page-2-js",
       "context": {},
-      "pluginCreator___NODE": "Plugin component-page-creator",
-      "pluginCreatorId": "Plugin component-page-creator",
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
       "componentPath": "/Users/apelsinet/h/portfolio/src/pages/page-2.js",
       "id": "SitePage /page-2/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "ced3df9e7a75d37ee7124cafe3c6fa98",
-        "description": "Plugin component-page-creator",
+        "contentDigest": "7176616686b72eeb3ab3e48e1fdc2ddb",
+        "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
     },
@@ -534,7 +577,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a571bf8ccba461ca25f36ad57e6553b8",
+        "contentDigest": "050814ec8f2e85f8d407529347f77606",
         "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
       }
@@ -542,7 +585,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "91051c4fd7f68dfab3712f2c33722c69"
+    "PLUGINS_HASH": "98b0c97d8236991d7ed7b5b88f542761"
   },
   "componentDataDependencies": {
     "nodes": {
