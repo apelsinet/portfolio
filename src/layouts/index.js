@@ -9,7 +9,7 @@ const Layout = ({ children, data }) => (
     <div
         style={{
             alignItems: 'center',
-            background: '#c02942',
+            background: '#3f51b5',
             display: 'flex',
             flexDirection: 'column',
             minHeight: '100vh',
