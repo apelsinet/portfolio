@@ -1,13 +1,23 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
+      "layout": "index",
+      "jsonName": "dev-404-page.json",
+      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
+      "component": "/Users/apelsinet/h/portfolio/.cache/dev-404-page.js",
+      "componentChunkName": "component---cache-dev-404-page-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "pluginCreatorId": "Plugin dev-404-page",
+      "componentPath": "/Users/apelsinet/h/portfolio/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
+        "contentDigest": "ffb81301c9b70da2b09c7e429d32202a",
+        "description": "Plugin dev-404-page",
         "owner": "internal-data-bridge"
       }
     },
@@ -465,14 +475,16 @@
       "siteMetadata": {
         "title": "apelsi.net"
       },
+      "port": "8000",
+      "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-08-19T13:41:12.339Z",
+      "buildTime": "2018-08-27T21:19:07.989Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "57e3646e9702956dfff5f7fb503b0ac3",
+        "contentDigest": "379885aeaa74315ab7f663bac22697c6",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -493,7 +505,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "503b0e5563146288af19b0882edf7b7b",
+        "contentDigest": "aac939ae120c199eaa5f68bd51661be5",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -514,7 +526,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6fec87f4c15e236f492a3cf461f47a72",
+        "contentDigest": "0265febab23dfa55440f88cf3a1c7a2d",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -535,7 +547,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c54d39104d3f759bef749158c80ee321",
+        "contentDigest": "996b64590f26c6411503d547578b5158",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -556,7 +568,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c613ec7dc447068af62a03e88d733001",
+        "contentDigest": "f93f9bf41c090b510a3d0516768cd931",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -577,7 +589,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a960317165848b12d152fb0fd0ae75a0",
+        "contentDigest": "ce23c5f220ed9c526aa352d7c342316c",
         "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
       }
@@ -593,6 +605,10 @@
         "LAYOUT___index"
       ]
     },
-    "connections": {}
+    "connections": {
+      "SitePage": [
+        "/dev-404-page/"
+      ]
+    }
   }
 }
