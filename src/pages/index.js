@@ -1,20 +1,26 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 function yearsDiff() {
-  const date1 = new Date()
-  const date2 = new Date("2017-02-15")
-  const yearsDiff = Math.abs(date2.getFullYear() - date1.getFullYear())
-  return yearsDiff < 10 ? `0${yearsDiff}` : yearsDiff
+  const date1 = new Date();
+  const date2 = new Date("2017-02-15");
+  const yearsDiff = Math.abs(date2.getFullYear() - date1.getFullYear());
+  return yearsDiff < 10 ? `0${yearsDiff}` : yearsDiff;
 }
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Portfolio | Mattias Prada" />
     <h2 className="keywords">
-      Leadership, product focus and code craftmanship
+      Leadership,
+      <br />
+      product focus
+      <br />
+      and code
+      <br />
+      craftmanship
     </h2>
     <h1 className="name">Mattias Prada</h1>
     <div className="line top"></div>
@@ -62,6 +68,6 @@ const IndexPage = () => (
       <a href="https://github.com/apelsinet">GitHub</a>
     </div>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
