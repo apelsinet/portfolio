@@ -35,19 +35,18 @@ const IndexPage = () => {
       </h2>
       <h1 className="name">Mattias Prada</h1>
       <div className="line top"></div>
-      <div className="role">Engineering Manager from Stockholm, Sweden</div>
+      <div className="role">Senior Engineering Manager from Stockholm, Sweden</div>
       <p className="copy first">
         I believe anyone can build fantastic products given the opportunity, if
         they have a passion, the right support and are eager to learn.
       </p>
       <p className="copy second">
-        Today I work at Epidemic Sound, where I support an amazing team of
+        I currently work at Storytel, where I support an amazing team of
         highly skilled Fullstack Software Engineers, and occasionally also get
-        my hands dirty with code, which I love.
+        my hands dirty with code or designing systems.
       </p>
       <p className="copy third">
-        We build products that helps our end users discover new music on our
-        platform; through search, recommendations and curation.
+        We build build and maintain storytel.com, a website in multiple languanges spread over more than 25 markets worldwide.
       </p>
       <p className="copy fourth">
         I thrive when I get to learn new things, and discuss topics close to my
@@ -69,7 +68,7 @@ const IndexPage = () => {
         professional journey into software engineering in 2017.
       </p>
       <p className="copy sixth">
-        For leisure I enjoy spending time with my son and partner, as well as
+        For leisure I enjoy spending time with my kids and partner, as well as
         playing video games, reading, watching rocket launches and learning new
         things.
       </p>
